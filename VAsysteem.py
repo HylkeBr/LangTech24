@@ -160,15 +160,24 @@ def findSynonym(word):
 
     return synonym
 
+def categoryOf(word):
+    colors = ['wit', 'zwart', 'rood', 'oranje',
+              'paars', 'blauw', 'groen', 'geel',
+              'roze']
+    for color in colors:
+        if word in color:
+            cat = 'kleur'
+    
+    return cat
+
 '''Returns Q and P properties, based on a sentence'''
 def find_QP(sent):
     sent_cl = rm_punct(sent)
     query_dict = {}
     parse = nlp(sent)
 
-    # questions starting with 'welke'
+    # questions starting with 'welk(e)'
     if parse[0].lemma_.lower() == 'welk':
-        anal_d = analyse(parse)
         for word in sent_cl.split():
             if word == find_head(sent_cl, word)[0]:
                 sent_ROOT = word
@@ -179,41 +188,69 @@ def find_QP(sent):
                 if root == parse[0].text: # parse[0] => .lemma.lower() == 'welk'
                     query_dict['P'] = findSynonym(word)
                 else:
-                    query_dict['Q'] = findSynonym(word)
+                    query_dict['Q'] = [findSynonym(word)]
+    # questions starting with 'hoe'
     elif parse[0].lemma_.lower() == 'hoe':
-        anal_d = analyse(parse)
         for word in sent_cl.split():
             if word == find_head(sent_cl, word)[0]:
                 sent_ROOT = word
                 query_dict['P'] = findSynonym(sent_ROOT)
             elif find_dep(parse, word) == 'nsubj':
-                query_dict['Q'] = findSynonym(word)
-    else: # wat vragen
+                query_dict['Q'] = [findSynonym(word)]
+    elif find_pos(parse, parse[0].text) == 'AUX':
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'ROOT':
+                Q1 = word
+            elif word == find_head(sent_cl, word)[0]:
+                Q2 = word
+                P1 = categoryOf(word)
+        query_dict['Q'] = [Q1, Q2]
+        query_dict['P'] = P1
+
+    # questions starting with 'wat' / the rest
+    else: 
         d = getKeywords(sent)
-        query_dict['Q'] = d['subject']
+        query_dict['Q'] = [d['subject']]
         query_dict['P'] = d['property']
-    
+
     return query_dict
 
 '''Create query, based on given IDs'''
 def createQueries(qIDs, pIDs):
-    ID1s = []
-    for ID in qIDs:
-        if animalID(ID):
-            ID1s.append(ID)
     qs = []
-    for ID1 in ID1s:
-        for ID2 in pIDs:
-            query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
-            qs.append(query)
+    if len(qIDs) == 1:
+        ID1s = []
+        # Preventive check for animal IDs
+        for ID in qIDs:
+            if animalID(ID):
+                ID1s.append(ID)
+        # Generate queries based on differend ID combinations
+        for ID1 in ID1s:
+            for ID2 in pIDs:
+                query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                qs.append(query)
+    else: # Boolean question
+        qID1s = qIDs[0]
+        qID2s = qIDs[1]
+
+        for qID1 in qID1s:
+            if animalID(qID1):
+                for qID2 in qID2s:
+                    for pID in pIDs:
+                        query = 'ASK { wd:' + qID1 + ' wdt:' + pID + ' wd:' + qID2 + ' . }'
+                        qs.append(query)
+                        
     return qs
 
 '''Answers questions'''
 def answerQuestion(question):
     keys = find_QP(question)
-    q_ids = getIDs(keys['Q'])
+    q_ids = []
+    for qkey in keys['Q']:
+        q_ids.append(getIDs(qkey))
     p_ids = getIDs(keys['P'], p=True)
     queries = createQueries(q_ids, p_ids)
+        
     answers = []
     for query in queries:
         answer = getAnswer(query)
@@ -228,16 +265,21 @@ def answerQuestion(question):
                 print(' -', ansLabel)
 
 def main():
-    q1 = 'Hoe groot is een olifant?'
-    q2 = 'Welke kleur heeft een ijsbeer?'
-    q3 = 'Welke commonscategorie past bij de olifant?'
-    q4 = 'Hoe lang is een giraffe?'
-    q5 = 'Welke IUCN-status heeft de leeuw?'
-    questions = [q1, q2, q3, q4, q5]
-    for q in questions:
-        print(q)
-        answerQuestion(q)
-        print()
+#    q1 = 'Hoe groot is een olifant?'
+#    q2 = 'Welke kleur heeft een ijsbeer?'
+#    q3 = 'Welke commonscategorie past bij de olifant?'
+#    q4 = 'Hoe lang is een giraffe?'
+#    q5 = 'Welke IUCN-status heeft de leeuw?'
+#    questions = [q1, q2, q3, q4, q5]
+#    for q in questions:
+#        print(q)
+#        answerQuestion(q)
+#        print()
+
+    q = 'Is een ijsbeer wit?'
+    print(q)
+    answerQuestion(q)
+
 
 if __name__ == '__main__':
     main()
