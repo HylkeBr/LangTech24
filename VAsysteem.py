@@ -219,6 +219,7 @@ def find_QP(sent):
 def createQueries(qIDs, pIDs):
     qs = []
     if len(qIDs) == 1:
+        qIDs = qIDs[0]
         ID1s = []
         # Preventive check for animal IDs
         for ID in qIDs:
@@ -276,20 +277,19 @@ def answerQuestion(question):
                     print(' -', ansLabel)
 
 def main():
-#    q1 = 'Hoe groot is een olifant?'
-#    q2 = 'Welke kleur heeft een ijsbeer?'
-#    q3 = 'Welke commonscategorie past bij de olifant?'
-#    q4 = 'Hoe lang is een giraffe?'
-#    q5 = 'Welke IUCN-status heeft de leeuw?'
-#    questions = [q1, q2, q3, q4, q5]
-#    for q in questions:
-#        print(q)
-#        answerQuestion(q)
-#        print()
+    q1 = 'Hoe groot is een olifant?'
+    q2 = 'Welke kleur heeft een ijsbeer?'
+    q3 = 'Welke commonscategorie past bij de olifant?'
+    q4 = 'Hoe lang is een giraffe?'
+    q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
+    q6 = 'Welke IUCN-status heeft de leeuw?'
+    q7 = 'Is een ijsbeer wit?'
+    questions = [q1, q2, q3, q4, q5, q6, q7]
+    for q in questions:
+        print(q)
+        answerQuestion(q)
+        print()
 
-    q = 'Is een ijsbeer wit?'
-    print(q)
-    answerQuestion(q)
 
 
 if __name__ == '__main__':
