@@ -239,7 +239,7 @@ def createQueries(qIDs, pIDs):
                     for pID in pIDs:
                         query = 'ASK { wd:' + qID1 + ' wdt:' + pID + ' wd:' + qID2 + ' . }'
                         qs.append(query)
-                        
+
     return qs
 
 '''Answers questions'''
@@ -249,8 +249,9 @@ def answerQuestion(question):
     for qkey in keys['Q']:
         q_ids.append(getIDs(qkey))
     p_ids = getIDs(keys['P'], p=True)
+
     queries = createQueries(q_ids, p_ids)
-        
+
     answers = []
     for query in queries:
         answer = getAnswer(query)
@@ -259,10 +260,20 @@ def answerQuestion(question):
 
     if len(answers) == 0:
         print(' - Excuses. Ik heb op deze vraag geen antwoord kunnen vinden.')
-    else: 
+    else:
+        answer_given = False
         for ans in answers:
-            for ansLabel in ans:
-                print(' -', ansLabel)
+            if type(ans) == bool:
+                if not answer_given:
+                    if True in answers:
+                        print(' - Ja')
+                        answer_given = True
+                    else:
+                        print(' - Nee')
+                        answer_given = True
+            else:
+                for ansLabel in ans:
+                    print(' -', ansLabel)
 
 def main():
 #    q1 = 'Hoe groot is een olifant?'
