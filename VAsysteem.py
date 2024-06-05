@@ -1,10 +1,10 @@
 import requests
 import time
 import spacy
-from spacy import displacy
 
 nlp = spacy.load("nl_core_news_lg")
 
+'''Function to find answers to a given query'''
 def getAnswer(query): 
     url = 'https://query.wikidata.org/sparql'
     resultsx = requests.get(url, params={'query': query, 'format': 'json'})
@@ -31,7 +31,7 @@ def getAnswer(query):
     
         return answers
 
-# Function to find the IDs of a search query
+'''Function to find the IDs of a search query'''
 def getIDs(query, p=False):
     # Create parameters
     url = 'https://www.wikidata.org/w/api.php'
@@ -50,7 +50,7 @@ def getIDs(query, p=False):
 
     return IDs
 
-# To filter on animals
+'''To filter on animals. Returns boolean'''
 def animalID(ID):
     query1 = 'SELECT ?ansLabel WHERE { wd:' + ID + ' wdt:P1417 ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
     result1 = getAnswer(query1)
@@ -68,7 +68,7 @@ def animalID(ID):
             isAnimal = True
     return isAnimal
 
-# Removes articles 'de', 'het' and 'een' from the input
+'''Removes articles 'de', 'het' and 'een' from the input'''
 def removeArticles(line):
     lineSplit = line.lower().split()
     articles = ['de', 'het', 'een']
@@ -79,7 +79,7 @@ def removeArticles(line):
 
     return newLine
 
-# Function to retreive the keywords, based on the question given
+'''Function to retreive the keywords to 'wat'-questions, based on the question given'''
 def getKeywords(question):
     sentence = nlp(question)
     keywords = {
@@ -100,34 +100,7 @@ def getKeywords(question):
 
     return keywords
 
-# Function for creating possible queries for the retreived keywords
-def createQueries(question):
-    keywords = getKeywords(question)
-    IDx = getIDs(keywords['subject'])
-    ID1s = []
-    for ID in IDx:
-        if animalID(ID):
-            ID1s.append(ID)
-    ID2s = getIDs(keywords['property'], p=True)
-    qs = []
-    for ID1 in ID1s:
-        for ID2 in ID2s:
-            query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
-            qs.append(query)
-    return qs
-
-def answerQuestion(question):
-    queries = createQueries(question)
-    answers = []
-    for query in queries:
-        answer = getAnswer(query)
-        if answer != []:
-            answers.append(answer)
-
-    for ans in answers:
-        for ansLabel in ans:
-            print(' -', ansLabel)
-
+'''Function to remove (select) punctuation'''
 def rm_punct(sent):
     clean_sent = ''
     for char in sent:
@@ -135,6 +108,7 @@ def rm_punct(sent):
             clean_sent += char
     return clean_sent
 
+'''Returns POS of a given word within a sentence'''
 def find_pos(parse_sent, qword):
     for word in parse_sent:
         if word.text == qword:
@@ -142,6 +116,7 @@ def find_pos(parse_sent, qword):
 
     return funct
 
+'''Returns dependency of a given word within a sentence'''
 def find_dep(parse_sent, qword):
     for word in parse_sent:
         if word.text == qword:
@@ -149,6 +124,7 @@ def find_dep(parse_sent, qword):
 
     return funct
 
+'''Returns root, based on sentence and head word'''
 def find_root(sent, head):
     parse = nlp(sent)
     root = []
@@ -157,6 +133,7 @@ def find_root(sent, head):
             root.append(word.text)
     return root
 
+'''Returns head, based on sentence and root word'''
 def find_head(sent, root):
     parse = nlp(sent)
     head = []
@@ -165,12 +142,14 @@ def find_head(sent, root):
             head.append(word.head.text)
     return head
 
+'''Returns a dependency analysis of a sentence'''
 def analyse(s):
     anal_d = {}
     for word in s:
         anal_d[word.text] = word.dep_
     return anal_d
 
+'''[HARDCODE] Returns synonyms of select words'''
 def findSynonym(word):
     synonym = word
     for possibleword in ['hoogte', 'lengte', 'grootte', 'lang']:
@@ -181,6 +160,7 @@ def findSynonym(word):
 
     return synonym
 
+'''Returns Q and P properties, based on a sentence'''
 def find_QP(sent):
     sent_cl = rm_punct(sent)
     query_dict = {}
@@ -215,7 +195,8 @@ def find_QP(sent):
     
     return query_dict
 
-def createQueries2(qIDs, pIDs):
+'''Create query, based on given IDs'''
+def createQueries(qIDs, pIDs):
     ID1s = []
     for ID in qIDs:
         if animalID(ID):
@@ -227,11 +208,12 @@ def createQueries2(qIDs, pIDs):
             qs.append(query)
     return qs
 
-def answerQuestion2(question):
+'''Answers questions'''
+def answerQuestion(question):
     keys = find_QP(question)
     q_ids = getIDs(keys['Q'])
     p_ids = getIDs(keys['P'], p=True)
-    queries = createQueries2(q_ids, p_ids)
+    queries = createQueries(q_ids, p_ids)
     answers = []
     for query in queries:
         answer = getAnswer(query)
@@ -254,7 +236,7 @@ def main():
     questions = [q1, q2, q3, q4, q5]
     for q in questions:
         print(q)
-        answerQuestion2(q)
+        answerQuestion(q)
         print()
 
 if __name__ == '__main__':
