@@ -149,25 +149,37 @@ def analyse(s):
         anal_d[word.text] = word.dep_
     return anal_d
 
-'''[HARDCODE] Returns synonyms of select words'''
-def findSynonym(word):
-    synonym = word
-    for possibleword in ['hoogte', 'lengte', 'grootte', 'lang']:
-        if word == possibleword:
-            synonym = 'hoogte'
-        elif word == possibleword[:len(word)]:
-            synonym = 'hoogte'
-
-    return synonym
-
+'''[HARDCODE] Returns synonyms/category of select words,
+if nothing in dict, it returns the input word'''
 def categoryOf(word):
-    colors = ['wit', 'zwart', 'rood', 'oranje',
-              'paars', 'blauw', 'groen', 'geel',
-              'roze']
-    for color in colors:
-        if word in color:
-            cat = 'kleur'
-    
+    cat_dict = {
+        'kleur': [
+            'wit', 'zwart', 'rood', 'oranje', 
+            'paars', 'blauw', 'groen', 'geel',
+            'roze', 'kleur'
+        ],
+        'draagtijd': [
+            'draagtijd', 'zwanger', 'zwangerschap',
+            'dracht'
+        ],
+        'hoogte': [
+            'hoogte', 'lengte', 'grootte', 'lang',
+            'hoog', 'groot'
+        ],
+        'massa': [
+             'massa', 'gewicht', 'zwaarte'
+        ]
+    }
+
+    found = False
+    for k,v in cat_dict.items():
+        for val in v:
+            if word in val or word == val:
+                cat = k
+                found = True
+    if not found:
+        cat = word
+
     return cat
 
 '''Returns Q and P properties, based on a sentence'''
@@ -186,17 +198,18 @@ def find_QP(sent):
         for word in keys:
             for root in find_root(sent_cl, word):
                 if root == parse[0].text: # parse[0] => .lemma.lower() == 'welk'
-                    query_dict['P'] = findSynonym(word)
+                    query_dict['P'] = categoryOf(word)
                 else:
-                    query_dict['Q'] = [findSynonym(word)]
+                    query_dict['Q'] = [categoryOf(word)]
     # questions starting with 'hoe'
     elif parse[0].lemma_.lower() == 'hoe':
         for word in sent_cl.split():
             if word == find_head(sent_cl, word)[0]:
                 sent_ROOT = word
-                query_dict['P'] = findSynonym(sent_ROOT)
+                query_dict['P'] = categoryOf(sent_ROOT)
             elif find_dep(parse, word) == 'nsubj':
-                query_dict['Q'] = [findSynonym(word)]
+                query_dict['Q'] = [categoryOf(word)]
+    # Binary questions starting with verb (aux)
     elif find_pos(parse, parse[0].text) == 'AUX':
         for word in sent_cl.split():
             if find_dep(parse, word) == 'ROOT':
@@ -276,6 +289,7 @@ def answerQuestion(question):
                 for ansLabel in ans:
                     print(' -', ansLabel)
 
+
 def main():
     q1 = 'Hoe groot is een olifant?'
     q2 = 'Welke kleur heeft een ijsbeer?'
@@ -289,7 +303,6 @@ def main():
         print(q)
         answerQuestion(q)
         print()
-
 
 
 if __name__ == '__main__':
