@@ -17,3 +17,12 @@ Final project Language Technology 2024
 - Output formaat aanpassen naar wat nodig is voor inleveren
   - JSON oid geloof ik
 - Wellicht nog meer/andere dingen
+
+## Done:
+- Soorten vragen:
+  - Is een ijsbeer wit?
+  - Hoe lang is een giraffe?
+  - Welke kleur heeft een olifant?
+  - Wat is de belangrijkste voedselbron van een tijger?
+- Geeft lijst met alle gevonden antwoorden
+  - Ook wanneer dit niet de bedoeling is
