@@ -9,7 +9,6 @@ Final project Language Technology 2024
   -  Filteren op correcte antwoorden op een of andere manier?
 - Meer verschillende soorten vragen matchen
   - Kun je me een lijst geven van alle berensoorten?
-  - Hoe heet een goudvis in het Duits?
 - Output formaat aanpassen naar wat nodig is voor inleveren
   - JSON oid geloof ik
 - Wellicht nog meer/andere dingen
