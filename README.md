@@ -25,6 +25,7 @@ Final project Language Technology 2024
   - Waar komt [een dier] voor? (regex)
   - Hoeveel weegt [een [bn] dier]? (regex, statement)
     - bn: pasgeboren, volwassene, mannelijke, vrouwelijke
+  - Hoeveel jongen krijgt [een dier]? (regex)
   - Hoe zwaar is [een dier]?
   - Hoe lang is [een dier]?
   - Hoe groot is [een dier]?
