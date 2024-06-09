@@ -29,7 +29,7 @@ Final project Language Technology 2024
   - Hoe groot is [een dier]?
   - Hoe hoog is [een dier]?
   - Hoe heet [een dier] in [een taal]?
-    - supported: English, German, French, Dutch
+    - all available languages supported
 
 - Geeft lijst met alle gevonden antwoorden
   - Ook wanneer dit niet de bedoeling is
