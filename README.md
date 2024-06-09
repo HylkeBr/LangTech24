@@ -17,14 +17,21 @@ Final project Language Technology 2024
 
 ## Done:
 - Soorten vragen:
-  - Is een ijsbeer wit?
-  - Hoe lang is een giraffe?
-  - Welke kleur heeft een olifant?
-  - Wat is de belangrijkste voedselbron van een tijger?
+  - Wat is [een aspect] van [een dier]?
+    - Example: Wat is de belangrijkste voedselbron van een tijger?
+   
+  - Is een [een dier] [kleur]?
+  - Welke kleur heeft [een dier]?
+ 
   - Waar is [een dier] goed voor? (regex)
   - Waar komt [een dier] voor? (regex)
   - Hoeveel weegt [een [bn] dier]? (regex, statement)
     - bn: pasgeboren, volwassene, mannelijke, vrouwelijke
+   
+  - Hoe zwaar is [een dier]?
+  - Hoe lang is [een dier]?
+  - Hoe groot is [een dier]?
+  - Hoe hoog is [een dier]?
 
 - Geeft lijst met alle gevonden antwoorden
   - Ook wanneer dit niet de bedoeling is
