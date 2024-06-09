@@ -9,8 +9,6 @@ Final project Language Technology 2024
   -  Filteren op correcte antwoorden op een of andere manier?
 - Meer verschillende soorten vragen matchen
   - Kun je me een lijst geven van alle berensoorten?
-  - Hoeveel jongen krijgt een kat?
-  - Hoe heet een goudvis in het Duits?
 - Output formaat aanpassen naar wat nodig is voor inleveren
   - JSON oid geloof ik
 - Wellicht nog meer/andere dingen
@@ -23,12 +21,15 @@ Final project Language Technology 2024
   - Welke kleur heeft [een dier]?
   - Waar is [een dier] goed voor? (regex)
   - Waar komt [een dier] voor? (regex)
-  - Hoeveel weegt [een [bn] dier]? (regex, statement)
-    - bn: pasgeboren, volwassene, mannelijke, vrouwelijke
+  - Hoeveel weegt [een [amod] dier]? (regex, statement)
+    - amod: pasgeboren, volwassene, mannelijke, vrouwelijke
+  - Hoeveel jongen krijgt [een dier]? (regex)
   - Hoe zwaar is [een dier]?
   - Hoe lang is [een dier]?
   - Hoe groot is [een dier]?
   - Hoe hoog is [een dier]?
+  - Hoe heet [een dier] in [een taal]?
+    - supported: English, German, French, Dutch
 
 - Geeft lijst met alle gevonden antwoorden
   - Ook wanneer dit niet de bedoeling is
