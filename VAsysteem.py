@@ -310,9 +310,7 @@ def main():
     q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
     q6 = 'Welke IUCN-status heeft de leeuw?'
     q7 = 'Is een ijsbeer wit?'
-    q8 = 'Wat is de moedertaxon van haaien?'
-
-    questions = [q1, q2, q3, q4, q5, q6, q7, q8]
+    questions = [q1, q2, q3, q4, q5, q6, q7]
     for q in questions:
         print(q)
         answerQuestion(q)
