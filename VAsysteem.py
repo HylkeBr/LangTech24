@@ -259,37 +259,39 @@ def createQueries(qIDs, pIDs):
 
 '''Answers questions'''
 def answerQuestion(question):
-    keys = find_QP(question)
-    q_ids = []
-    for qkey in keys['Q']:
-        q_ids.append(getIDs(qkey))
-    p_ids = getIDs(keys['P'], p=True)
+    try:
+        keys = find_QP(question)
+        q_ids = []
+        for qkey in keys['Q']:
+            q_ids.append(getIDs(qkey))
+        p_ids = getIDs(keys['P'], p=True)
 
-    queries = createQueries(q_ids, p_ids)
+        queries = createQueries(q_ids, p_ids)
 
-    answers = []
-    for query in queries:
-        answer = getAnswer(query)
-        if answer != []:
-            answers.append(answer)
+        answers = []
+        for query in queries:
+            answer = getAnswer(query)
+            if answer != []:
+                answers.append(answer)
 
-    if len(answers) == 0:
-        print(' - Excuses. Ik heb op deze vraag geen antwoord kunnen vinden.')
-    else:
-        answer_given = False
-        for ans in answers:
-            if type(ans) == bool:
-                if not answer_given:
-                    if True in answers:
-                        print(' - Ja')
-                        answer_given = True
-                    else:
-                        print(' - Nee')
-                        answer_given = True
-            else:
-                for ansLabel in ans:
-                    print(' -', ansLabel)
-
+        if len(answers) == 0:
+            print(' - Excuses. Ik heb op deze vraag geen antwoord kunnen vinden.')
+        else:
+            answer_given = False
+            for ans in answers:
+                if type(ans) == bool:
+                    if not answer_given:
+                        if True in answers:
+                            print(' - Ja')
+                            answer_given = True
+                        else:
+                            print(' - Nee')
+                            answer_given = True
+                else:
+                    for ansLabel in ans:
+                        print(' -', ansLabel)
+    except Exception as e:
+        print(f" - Er was een fout bij het beantwoorden van de vraag: {str(e)}")
 
 def main():
     #with open('testing.json', 'r', encoding='utf-8') as f:
@@ -308,7 +310,9 @@ def main():
     q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
     q6 = 'Welke IUCN-status heeft de leeuw?'
     q7 = 'Is een ijsbeer wit?'
-    questions = [q1, q2, q3, q4, q5, q6, q7]
+    q8 = 'Wat is de moedertaxon van haaien?'
+
+    questions = [q1, q2, q3, q4, q5, q6, q7, q8]
     for q in questions:
         print(q)
         answerQuestion(q)
