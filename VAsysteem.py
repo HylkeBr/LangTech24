@@ -1,6 +1,7 @@
 import requests
 import time
 import spacy
+import json
 
 nlp = spacy.load("nl_core_news_lg")
 
@@ -291,6 +292,15 @@ def answerQuestion(question):
 
 
 def main():
+    #with open('testing.json', 'r', encoding='utf-8') as f:
+       #questions = json.load(f)
+
+    #for question_data in questions:
+        #question = question_data['string']
+        #print(f"Vraag: {question}")
+        #answerQuestion(question)
+        #print()
+
     q1 = 'Hoe groot is een olifant?'
     q2 = 'Welke kleur heeft een ijsbeer?'
     q3 = 'Welke commonscategorie past bij de olifant?'

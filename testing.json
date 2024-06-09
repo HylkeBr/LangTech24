@@ -1,0 +1,3792 @@
+[
+    {
+        "studentnumber": "s3511502",
+        "string": "waar leven orang-oetangs?",
+        "answer": [
+            {
+                "string": "Borneo",
+                "uri": "https://www.wikidata.org/wiki/Q41050"
+            },
+            {
+                "string": "Sumatra",
+                "uri": "https://www.wikidata.org/wiki/Q41050"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "is een dolphijn een vis?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q7369"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "leven er korsthagedissen in Mexico?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q96"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "waar slapen koala's meestal?",
+        "answer": [
+            {
+                "string": "bomen",
+                "uri": "https://www.wikidata.org/wiki/Q36101"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "wat doen mannetjes mieren?",
+        "answer": [
+            {
+                "string": "Ze dienen alleen voor de voortplanting",
+                "uri": "https://www.wikidata.org/wiki/Q7386"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "wat is het meest gehouden huisdier?",
+        "answer": [
+            {
+                "string": "Hond",
+                "uri": "https://www.wikidata.org/wiki/Q39201"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "hoeveel vershillende soorten beren zijn er?",
+        "answer": [
+            {
+                "string": "8",
+                "uri": "https://www.wikidata.org/wiki/Q7369"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "wat eten blauwe vinvissen?",
+        "answer": [
+            {
+                "string": "krill",
+                "uri": "https://www.wikidata.org/wiki/Q7369"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "welke slang is het giftigst?",
+        "answer": [
+            {
+                "string": "de taipan",
+                "uri": "https://www.wikidata.org/wiki/Q424200"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3511502",
+        "string": "hoe groot kunnen olifanten worden?",
+        "answer": [
+            {
+                "string": "vier meter",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Hoeveel weegt een rode panda?",
+        "answer": [
+            {
+                "string": "4.95 kilo",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Wat is het gewicht van een rode panda?",
+        "answer": [
+            {
+                "string": "4.95 kilo",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "In welk jaar won de dagpauwoog de Butterfly of the Year prijs?",
+        "answer": [
+            {
+                "string": "2019",
+                "uri": "https://www.wikidata.org/wiki/Q158699"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Hoe oud wordt een hond?",
+        "answer": [
+            {
+                "string": "9 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q158699"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Kan een muilezel veulens krijgen?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q41692"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Welke kleuren heeft een duitse herder?",
+        "answer": [
+            {
+                "string": "zwart",
+                "uri": "https://www.wikidata.org/wiki/Q38280"
+            },
+            {
+                "string": "bordeaux",
+                "uri": "https://www.wikidata.org/wiki/Q38280"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Is een reuzepanda een herbivoor?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Is de reuzepanda een planteneter?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Is de reuzepanda een carnivoor?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4836022",
+        "string": "Is een reuzepanda een omnivoor?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Hoe zwaar is een volwassen mannetjes leeuw?",
+        "answer": [
+            {
+                "string": "188 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Uit wat voor kleuren bestaat de vacht van een tijger?",
+        "answer": [
+            {
+                "string": "Oranje",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "Zwart",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "Wit",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Zijn chimpansees een bedreigde diersoort?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q4126704"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Wat is de wetenschappelijke naam van een hond?",
+        "answer": [
+            {
+                "string": "Canis lupus familiaris",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Wat is de belangrijkste voedselbron van een orang-oetan?",
+        "answer": [
+            {
+                "string": "Fruit",
+                "uri": "https://www.wikidata.org/wiki/Q41050"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Is het geboorte gewicht van een ijsbeer 750 gram?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Eet een ijsbeer vis?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Wanneer was de bruine beer het dier van het jaar?",
+        "answer": [
+            {
+                "string": "2005",
+                "uri": "https://www.wikidata.org/wiki/Q36341"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Hoeveel slagen per minuut maakt het hart van een giraffe?",
+        "answer": [
+            {
+                "string": "150",
+                "uri": "https://www.wikidata.org/wiki/Q15083"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4890396",
+        "string": "Leeft een pingu\u00efn op het zuidelijk of het noordelijk halfrond?",
+        "answer": [
+            {
+                "string": "zuidelijk halfrond",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Tot welk ras behoort de Boerenfox?",
+        "answer": [
+            {
+                "string": "hondenras",
+                "uri": "https://www.wikidata.org/wiki/Q2446076"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Hoe lang is een kat zwanger?",
+        "answer": [
+            {
+                "string": "64 dag",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Wat is de wetenschappelijke naam van de grizzlybeer?",
+        "answer": [
+            {
+                "string": "Ursus arctos horribilis",
+                "uri": "https://www.wikidata.org/wiki/Q171004"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Wat is de Engelse benaming van een schol?",
+        "answer": [
+            {
+                "string": "plaice",
+                "uri": "https://www.wikidata.org/wiki/Q27098"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Wat is het gewicht van een volwassen mannelijk jachtluipaard?",
+        "answer": [
+            {
+                "string": "40,2 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q23907"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Vanaf wanneer zijn zeepaardjes gevonden?",
+        "answer": [
+            {
+                "string": "23 miljoen jaar v.Chr.",
+                "uri": "https://www.wikidata.org/wiki/Q74363"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Wat is de YSO-identificatiecode van de witte haai?",
+        "answer": [
+            {
+                "string": "38942",
+                "uri": "https://www.wikidata.org/wiki/Q129026"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Is de mier een subclasse van vliesvleugeligen?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q7386"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Hoe heet de studie die mieren bestudeert?",
+        "answer": [
+            {
+                "string": "myrmecologie",
+                "uri": "https://www.wikidata.org/wiki/Q7386"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953525",
+        "string": "Welke kleur heeft een olifant?",
+        "answer": [
+            {
+                "string": "grijs",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Hoe heet de studie van insecten?",
+        "answer": [
+            {
+                "string": "entomologie",
+                "uri": "https://www.wikidata.org/wiki/Q39286"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Wat is het grootste zoogdier ter wereld?",
+        "answer": [
+            {
+                "string": "blauwe vinvis",
+                "uri": "https://www.wikidata.org/wiki/Q42196"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Wat is de bijtkracht van een leeuw?",
+        "answer": [
+            {
+                "string": "112",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Wat zijn de belangrijkste voedselbronnen voor tijgers?",
+        "answer": [
+            {
+                "string": "hoefdieren",
+                "uri": "https://www.wikidata.org/wiki/Q1231177"
+            },
+            {
+                "string": "aap",
+                "uri": "https://www.wikidata.org/wiki/Q1367"
+            },
+            {
+                "string": "fazantachtigen",
+                "uri": "https://www.wikidata.org/wiki/Q26375"
+            },
+            {
+                "string": "hazen en konijnen",
+                "uri": "https://www.wikidata.org/wiki/Q25900"
+            },
+            {
+                "string": "vissen",
+                "uri": "https://www.wikidata.org/wiki/Q152"
+            },
+            {
+                "string": "hond",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "noot",
+                "uri": "https://www.wikidata.org/wiki/Q11009"
+            },
+            {
+                "string": "kruidachtig",
+                "uri": "https://www.wikidata.org/wiki/Q190903"
+            },
+            {
+                "string": "fruit",
+                "uri": "https://www.wikidata.org/wiki/Q3314483"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Welke kleur zijn olifanten??",
+        "answer": [
+            {
+                "string": "grijs",
+                "uri": "https://www.wikidata.org/wiki/Q42519"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Waar komen koala's vandaan?",
+        "answer": [
+            {
+                "string": "Australi\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q408"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Wie is de taxonauteur van de eekhoorn?",
+        "answer": [
+            {
+                "string": "Gotthelf Fischer von Waldheim",
+                "uri": "https://www.wikidata.org/wiki/Q57802"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Wat is the unicode karakter van een gorilla?",
+        "answer": [
+            {
+                "string": "\ud83e\udd8d",
+                "uri": "https://www.wikidata.org/wiki/Q36611"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Wanneer werd de wetenschappelijke naam voor het taxon van gorilla's voor het eerst gepubliceerd?",
+        "answer": [
+            {
+                "string": "1847",
+                "uri": "https://www.wikidata.org/wiki/Q36611"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4168143",
+        "string": "Hoe snel is een jachtluipaard?",
+        "answer": [
+            {
+                "string": "120 kilometer per uur",
+                "uri": "https://www.wikidata.org/wiki/Q23907"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Hoe veel eieren worden er tegelijkertijd gelegd door de Reuzentoekan?",
+        "answer": [
+            {
+                "string": "2",
+                "uri": "https://www.wikidata.org/wiki/Q376038"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "In welke habitat leeft de rode panda?",
+        "answer": [
+            {
+                "string": "struweel",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "bos",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Is de habitat van de tijger het bos?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Hoe oud is de oudste geobserveerde leeuw geworden?",
+        "answer": [
+            {
+                "string": "27 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Welke kleuren heeft een orca?",
+        "answer": [
+            {
+                "string": "zwart",
+                "uri": "https://www.wikidata.org/wiki/Q26843"
+            },
+            {
+                "string": "wit",
+                "uri": "https://www.wikidata.org/wiki/Q26843"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Wat is de gemiddelde levensverwachting van een ijsbeer?",
+        "answer": [
+            {
+                "string": "50 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Sinds wanneer leven alligators?",
+        "answer": [
+            {
+                "string": "37 miljoen jaar v.C.",
+                "uri": "https://www.wikidata.org/wiki/Q530397"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "De wetenschappelijke naam van een wasbeer is Procyon Lotor",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q121439"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Wat voor een geluid maakt een bij?",
+        "answer": [
+            {
+                "string": "zoemen",
+                "uri": "https://www.wikidata.org/wiki/Q7391"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4882067",
+        "string": "Tot welke frequentie kan een vleermuis geluid horen?",
+        "answer": [
+            {
+                "string": "110,000 hertz",
+                "uri": "https://www.wikidata.org/wiki/Q28425"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Wat is het grootste landdier ter wereld?",
+        "answer": [
+            {
+                "string": "olifant",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Welk dier heeft strepen over zijn hele lichaam?",
+        "answer": [
+            {
+                "string": "zebra",
+                "uri": "https://www.wikidata.org/wiki/Q32789"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Welk dier heeft een hele lange nek?",
+        "answer": [
+            {
+                "string": "giraffe",
+                "uri": "https://www.wikidata.org/wiki/Q862089"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Hoe noem je het jong van een hond?",
+        "answer": [
+            {
+                "string": "puppy",
+                "uri": "https://www.wikidata.org/wiki/Q39266"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Welk dier heeft een lange slurf?",
+        "answer": [
+            {
+                "string": "olifant",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Welk dier met een dikke vacht houdt een winterslaap?",
+        "answer": [
+            {
+                "string": "beer",
+                "uri": "https://www.wikidata.org/wiki/Q30090244"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Hoe noem je de baby van een kat?",
+        "answer": [
+            {
+                "string": "kitten",
+                "uri": "https://www.wikidata.org/wiki/Q147"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Welk dier dat eieren legt kan vliegen?",
+        "answer": [
+            {
+                "string": "vogel",
+                "uri": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Welk dier heeft een lange staart en klauwen?",
+        "answer": [
+            {
+                "string": "kat",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4765079",
+        "string": "Hoe noem je het jong van een koe?",
+        "answer": [
+            {
+                "string": "kalf",
+                "uri": "https://www.wikidata.org/wiki/Q2935"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Wat is de wetenschappelijke naam van de gewone pad?",
+        "answer": [
+            {
+                "string": "Bufo bufo",
+                "uri": "https://www.wikidata.org/wiki/Q146375"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Wat is de spanwijdte van de korhoen?",
+        "answer": [
+            {
+                "string": "72 centimeter",
+                "uri": "https://www.wikidata.org/wiki/Q155878"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "In welke landen leeft de capibara?",
+        "answer": [
+            {
+                "string": "Brazili\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Uruguay",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Argentini\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Bolivia",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Colombia",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Ecuador",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Panama",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Paraguay",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Peru",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            },
+            {
+                "string": "Venezuela",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Hoeveel jongen krijgt een capibara?",
+        "answer": [
+            {
+                "string": "4",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Is de pantergekko een bedreigde soort?",
+        "answer": [
+            {
+                "string": "nee",
+                "uri": "https://www.wikidata.org/wiki/Q256860"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "In welk jaar is de wetenschappelijke naam van de zwarte adder, Pseudechis porphyriacus, voor het eerst gepubliceerd?",
+        "answer": [
+            {
+                "string": "1794",
+                "uri": "https://www.wikidata.org/wiki/Q2005433"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Sinds wanneer bestaan pissebedden?",
+        "answer": [
+            {
+                "string": "300 miljoen jaar v.Chr.",
+                "uri": "https://www.wikidata.org/wiki/Q206338"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Welke planten bestuift een koolwitje?",
+        "answer": [
+            {
+                "string": "tomatenplant",
+                "uri": "https://www.wikidata.org/wiki/Q27653"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Is het strand \u00e9\u00e9n van de habitats van de bruine beer?",
+        "answer": [
+            {
+                "string": "nee",
+                "uri": "https://www.wikidata.org/wiki/Q36341"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3802655",
+        "string": "Welk Unicode-symbool correspondeert er met de zebra?",
+        "answer": [
+            {
+                "string": "\ud83e\udd93",
+                "uri": "https://www.wikidata.org/wiki/Q32789"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat is de gemiddelde levensduur van een huiskat?",
+        "answer": [
+            {
+                "string": "15 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat is de hoogte van een Afrikaanse olifant?",
+        "answer": [
+            {
+                "string": "370 centimeter",
+                "uri": "https://www.wikidata.org/wiki/Q185038"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat eten koalas?",
+        "answer": [
+            {
+                "string": "eucalyptusbladeren",
+                "uri": "https://www.wikidata.org/wiki/Q36101"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat is de maximale geluidsfrequentie dat goudvissen kunnen waarnemen?",
+        "answer": [
+            {
+                "string": "3000 hertz",
+                "uri": "https://www.wikidata.org/wiki/Q123141"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat is de bijtkracht van een tijger?",
+        "answer": [
+            {
+                "string": "127 newton per kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat is het langst geobserveerde levensduur van een huismuis?",
+        "answer": [
+            {
+                "string": "4 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q83310"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Hoe lang zijn apen zwanger?",
+        "answer": [
+            {
+                "string": "270\u00b119 dagen",
+                "uri": "https://www.wikidata.org/wiki/Q36611"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Waar komen goudhamsters oorspronkelijk vandaan?",
+        "answer": [
+            {
+                "string": "Syri\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q204175"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat is de hartslag van een geit?",
+        "answer": [
+            {
+                "string": "75\u00b15 slagen per minuut",
+                "uri": "https://www.wikidata.org/wiki/Q2934"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4953266",
+        "string": "Wat is de spanwijdte van een huismus?",
+        "answer": [
+            {
+                "string": "239\u00b16 millimeter",
+                "uri": "https://www.wikidata.org/wiki/Q14683"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Hoe veel weegt het hart van een giraf?",
+        "answer": [
+            {
+                "string": "11 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q862089"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Leggen platypi eieren?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q15343"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Wat voor stoffen kan men krijgen van een olifant?",
+        "answer": [
+            {
+                "string": "Olifant ivoor",
+                "uri": "https://www.wikidata.org/wiki/Q2372824"
+            },
+            {
+                "string": "Olifant vlees",
+                "uri": "https://www.wikidata.org/wiki/Q2372824"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Wat voor eigenschappen heeft een slang?",
+        "answer": [
+            {
+                "string": "Ledemaatloos",
+                "uri": "https://www.wikidata.org/wiki/Q2102"
+            },
+            {
+                "string": "Schubbig",
+                "uri": "https://www.wikidata.org/wiki/Q2102"
+            },
+            {
+                "string": "Uitgestrekt",
+                "uri": "https://www.wikidata.org/wiki/Q2102"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Hoe zien de ogen van een libelle eruit?",
+        "answer": [
+            {
+                "string": "https://commons.wikimedia.org/wiki/File:Dragonfly_eye_3811.jpg",
+                "uri": "https://www.wikidata.org/wiki/Q80066"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Wie maakte de wetenschappelijke naam van een valk falco?",
+        "answer": [
+            {
+                "string": "Carl Linnaeus",
+                "uri": "https://www.wikidata.org/wiki/Q43489"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Wanneer zijn vliegen ontstaan?",
+        "answer": [
+            {
+                "string": "245 miljoen jaar voor christus",
+                "uri": "https://www.wikidata.org/wiki/Q25312"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Zijn prawns garnalen?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q1517781"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Wat voor dieren zijn zeevruchten?",
+        "answer": [
+            {
+                "string": "Garnalen",
+                "uri": "https://www.wikidata.org/wiki/Q1517781"
+            },
+            {
+                "string": "Zalm",
+                "uri": "https://www.wikidata.org/wiki/Q2796766"
+            },
+            {
+                "string": "Mosselen",
+                "uri": "https://www.wikidata.org/wiki/Q27855"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Hoe beweegt een aardworn?",
+        "answer": [
+            {
+                "string": "Door bergafwaarts te kruipen",
+                "uri": "https://www.wikidata.org/wiki/Q124378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4895606",
+        "string": "Hoeveel meer weegt een volwassen zanglijster dan een pasgeboren zanglijster?",
+        "answer": [
+            {
+                "string": "66 gram",
+                "uri": "https://www.wikidata.org/wiki/Q26349"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Welke diersoort is een wombat?",
+        "answer": [
+            {
+                "string": "Buideldier",
+                "uri": "https://www.wikidata.org/wiki/Q752436"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Wat zijn andere benamingen voor tijgers?",
+        "answer": [
+            {
+                "string": "Panthera tigris",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "tigress",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "tigers",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Hoe veel weegt een volwassen leeuw?",
+        "answer": [
+            {
+                "string": "188 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Wat is het unicode character van een eend?",
+        "answer": [
+            {
+                "string": "\ud83e\udd86",
+                "uri": "https://www.wikidata.org/wiki/Q3736439"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Welke kleur is een olifant?",
+        "answer": [
+            {
+                "string": "Grijs",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "In welk jaar is de wetenschappelijke naam van de valkparkiet gepubliseert?",
+        "answer": [
+            {
+                "string": "1792",
+                "uri": "https://www.wikidata.org/wiki/Q514809"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Wat is de levensverwachting van een hond?",
+        "answer": [
+            {
+                "string": "9 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Hoe oud is de oudste hond geworden?",
+        "answer": [
+            {
+                "string": "30 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Hoe heet de studie van dolfijnen?",
+        "answer": [
+            {
+                "string": "delphinology",
+                "uri": "https://www.wikidata.org/wiki/Q7369"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4343611",
+        "string": "Hoe lang is een gorilla zwanger?",
+        "answer": [
+            {
+                "string": "270\u00b119 dag",
+                "uri": "https://www.wikidata.org/wiki/Q36611"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Wat weegt een pimpelmees bij de geboorte?",
+        "answer": [
+            {
+                "string": "1.14 gram",
+                "uri": "https://www.wikidata.org/wiki/Q25404"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Hoe zwaar is een volwassen pimpelmees?",
+        "answer": [
+            {
+                "string": "11.8 gram",
+                "uri": "https://www.wikidata.org/wiki/Q25404"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Wat is het gewicht van een mannelijke bonobo?",
+        "answer": [
+            {
+                "string": "43 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q19537"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Welke kleur heeft de onderkant van een pimpelmees?",
+        "answer": [
+            {
+                "string": "geel",
+                "uri": "https://www.wikidata.org/wiki/Q25404"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Hoe lang leeft een kat?",
+        "answer": [
+            {
+                "string": "15 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Wat is de maximale levensduur van een tijger?",
+        "answer": [
+            {
+                "string": "26.3 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Welke kleuren heeft een tijger?",
+        "answer": [
+            {
+                "string": "oranje",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "zwart",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "wit",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Waar komen koala's voor?",
+        "answer": [
+            {
+                "string": "Australi\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q431978"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Is de galapagosreuzenschildpad uitgestorven?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q486672"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4952294",
+        "string": "Wat is de habitat van een Aziatische olifant?",
+        "answer": [
+            {
+                "string": "bos",
+                "uri": "https://www.wikidata.org/wiki/Q133006"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Welke kleuren heeft een tijger?",
+        "answer": [
+            {
+                "string": "oranje",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "zwart",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "wit",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Waar leeft de wasbeer?",
+        "answer": [
+            {
+                "string": "het bos",
+                "uri": "https://www.wikidata.org/wiki/Q121439"
+            },
+            {
+                "string": "de stad",
+                "uri": "https://www.wikidata.org/wiki/Q121439"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Hoe groot is een olifant?",
+        "answer": [
+            {
+                "string": "4 meter",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Welk geluid maakt een bij?",
+        "answer": [
+            {
+                "string": "Zoemen",
+                "uri": "https://www.wikidata.org/wiki/Q7391"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Wanneer zijn vleermuizen wakker?",
+        "answer": [
+            {
+                "string": "Nachtelijk",
+                "uri": "https://www.wikidata.org/wiki/Q28425"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Waar komt de kiwi voor?",
+        "answer": [
+            {
+                "string": "Nieuw Zeeland",
+                "uri": "https://www.wikidata.org/wiki/Q43642"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Wanneer is de dodo uitgestorven?",
+        "answer": [
+            {
+                "string": "1690",
+                "uri": "https://www.wikidata.org/wiki/Q43502"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Hoe zwaar is een baby giraffe?",
+        "answer": [
+            {
+                "string": "54,5 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q15083"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Hoe oud worden koala's gemiddeld?",
+        "answer": [
+            {
+                "string": "10 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q36101"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4457498",
+        "string": "Wat eet een rode panda?",
+        "answer": [
+            {
+                "string": "fruit",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "bamboe bladeren",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "eikels",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "mos",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "eieren",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "vogels",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "insecten",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Welke kleur is een olifant?",
+        "answer": [
+            {
+                "string": "grijs",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Hoeveel weegt een Virginiaanse opossum?",
+        "answer": [
+            {
+                "string": "0.16 gram",
+                "uri": "https://www.wikidata.org/wiki/Q147267"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Welke kleur is een honingbij?",
+        "answer": [
+            {
+                "string": "geel",
+                "uri": "https://www.wikidata.org/wiki/Q30034"
+            },
+            {
+                "string": "zwart",
+                "uri": "https://www.wikidata.org/wiki/Q30034"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Hoe oud kan een bruine beer worden?",
+        "answer": [
+            {
+                "string": "40 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q36341"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Zijn aardvarkens vooral overdag actief?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q46212"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Zijn goudvissen invasief voor Australi\u00eb?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q123141"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Hoe heet een mannelijk rund?",
+        "answer": [
+            {
+                "string": "Stier",
+                "uri": "https://www.wikidata.org/wiki/Q693690"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Welk dier, dat een draagtijd heeft van 22 weken, heeft hoorns?",
+        "answer": [
+            {
+                "string": "geit",
+                "uri": "https://www.wikidata.org/wiki/Q2934"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Wat is de gemiddelde snelheid van een koala?",
+        "answer": [
+            {
+                "string": "1.20 meter per seconde",
+                "uri": "https://www.wikidata.org/wiki/Q36101"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4779428",
+        "string": "Hoe oud kan een Europese otter worden?",
+        "answer": [
+            {
+                "string": "18.2 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q29995"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Wat is de gemiddelde hartslag van een kat?",
+        "answer": [
+            {
+                "string": "125 slagen per minuut",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Wat is het grootste landdier ter wereld?",
+        "answer": [
+            {
+                "string": "Savanneolifant",
+                "uri": "https://www.wikidata.org/wiki/Q36557"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Tot welke klasse behoort de vleermuis?",
+        "answer": [
+            {
+                "string": "Zoogdier",
+                "uri": "https://www.wikidata.org/wiki/Q28425"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Behoort de pinguin tot de familie van vogels?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Hoe oud is de oudste ijsbeer ooit geworden?",
+        "answer": [
+            {
+                "string": "43.8 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Is een hond een zoogdier?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Welk geslacht heeft een koe?",
+        "answer": [
+            {
+                "string": "Vrouwelijk",
+                "uri": "https://www.wikidata.org/wiki/Q11748378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Welke dieren zijn onderdeel van de 'Big Five game'?",
+        "answer": [
+            {
+                "string": "Leeuw",
+                "uri": "https://www.wikidata.org/wiki/Q196164"
+            },
+            {
+                "string": "Luipaard",
+                "uri": "https://www.wikidata.org/wiki/Q196164"
+            },
+            {
+                "string": "Olifant",
+                "uri": "https://www.wikidata.org/wiki/Q196164"
+            },
+            {
+                "string": "Zwarte neushoorn",
+                "uri": "https://www.wikidata.org/wiki/Q196164"
+            },
+            {
+                "string": "Kafferbuffel",
+                "uri": "https://www.wikidata.org/wiki/Q196164"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Wat is het tegenovergestelde van ongewervelde dieren?",
+        "answer": [
+            {
+                "string": "Gewervelde dieren",
+                "uri": "https://www.wikidata.org/wiki/Q25241"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3638898",
+        "string": "Wat drinken jonge zoogdieren?",
+        "answer": [
+            {
+                "string": "Melk",
+                "uri": "https://www.wikidata.org/wiki/Q7377"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Zijn vleermuizen zoogdieren?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q28425"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Is een krokodil een reptiel?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q2535664"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Wat zijn dolfijnen?",
+        "answer": [
+            {
+                "string": "zeezoogdieren",
+                "uri": "https://www.wikidata.org/wiki/Q7369"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Hoeveel weegt een giraffe?",
+        "answer": [
+            {
+                "string": "54.5 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q15083"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Is een alligator hetzelfde als een krokodil?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q15083"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Wat is de levensverwachting van een kat?",
+        "answer": [
+            {
+                "string": "15 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s1234567",
+        "string": "Waar kan je een hond voor gebruiken?",
+        "answer": [
+            {
+                "string": "huisdier",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "jagen",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "bewaker",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "dienst dier",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "medische behandeling",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "politie",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "bewaken",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Welk geluid maakt een leeuw?",
+        "answer": [
+            {
+                "string": "roar",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Waar leeft een orca?",
+        "answer": [
+            {
+                "string": "Wereld oceaan",
+                "uri": "https://www.wikidata.org/wiki/Q26843"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4495845",
+        "string": "Sinds wanneer bestaan panters?",
+        "answer": [
+            {
+                "string": "5950000 jaar BCE",
+                "uri": "https://www.wikidata.org/wiki/Q127960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Welke kleur heeft een ijsbeer?",
+        "answer": [
+            {
+                "string": "wit",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Wat is de hartslag van een giraffe per minuut?",
+        "answer": [
+            {
+                "string": "150",
+                "uri": "https://www.wikidata.org/wiki/Q15083"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Wat is de levensverwachting van een koala?",
+        "answer": [
+            {
+                "string": "10 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q36101"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Is de Afrikaanse bosolifant het grootste landdier?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q36557"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Hoeveel soorten leeuwen zijn er?",
+        "answer": [
+            {
+                "string": "twee",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Zijn er vogels die kunnen zwemmen?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q3303681"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Wat is de maximale snelheid van een cheeta?",
+        "answer": [
+            {
+                "string": "120 kilometer per uur",
+                "uri": "https://www.wikidata.org/wiki/Q23907"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Is een nijlpaard een zoogdier?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q629680"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Welke vogel behoort tot de grootste valken?",
+        "answer": [
+            {
+                "string": "slechtvalk",
+                "uri": "https://www.wikidata.org/wiki/Q30535"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4097017",
+        "string": "Kunnen olifanten springen?",
+        "answer": [
+            {
+                "string": "nee",
+                "uri": "https://www.wikidata.org/wiki/Q1326198"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Welk dier kan honing maken?",
+        "answer": [
+            {
+                "string": "Een bij",
+                "uri": "https://www.wikidata.org/wiki/Q10987"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Sinds wanneer bestaan haaien al?",
+        "answer": [
+            {
+                "string": "425 miljoen jaar voor Christus",
+                "uri": "https://www.wikidata.org/wiki/Q7372"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Is een krokodil een reptiel?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q2535664"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Welke dieren vallen onder vogels?",
+        "answer": [
+            {
+                "string": "Roodkuiftoerako",
+                "uri": "https://www.wikidata.org/wiki/Q5113"
+            },
+            {
+                "string": "Schoenbekooievaar",
+                "uri": "https://www.wikidata.org/wiki/Q5113"
+            },
+            {
+                "string": "Witstaartkeerkringvogel",
+                "uri": "https://www.wikidata.org/wiki/Q5113"
+            },
+            {
+                "string": "Stellers zeearend",
+                "uri": "https://www.wikidata.org/wiki/Q5113"
+            },
+            {
+                "string": "Grijze kroonkraanvogel",
+                "uri": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Hebben slangen ledematen?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q2102"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Welke verschillende vlinders zijn er?",
+        "answer": [
+            {
+                "string": "Charaxes brutus",
+                "uri": "https://www.wikidata.org/wiki/Q11946202"
+            },
+            {
+                "string": "Morpho helena",
+                "uri": "https://www.wikidata.org/wiki/Q11946202"
+            },
+            {
+                "string": "Lycaena phlaeas",
+                "uri": "https://www.wikidata.org/wiki/Q11946202"
+            },
+            {
+                "string": "Libytheana carineta",
+                "uri": "https://www.wikidata.org/wiki/Q11946202"
+            },
+            {
+                "string": "Cupido comyntas",
+                "uri": "https://www.wikidata.org/wiki/Q11946202"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Zijn kikkers amfibie\u00ebn?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q53636"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Zijn pingu\u00efns zoogdieren?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Welke verschillende pingu\u00efns zijn er?",
+        "answer": [
+            {
+                "string": "Ezelspingu\u00efn",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            },
+            {
+                "string": "Zwartvoetpingu\u00efn",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            },
+            {
+                "string": "Stormbandpingu\u00efn",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4354427",
+        "string": "Waar zijn de meeste pingu\u00efns te vinden?",
+        "answer": [
+            {
+                "string": "Antartica",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Wat voor dier is een olifant?",
+        "answer": [
+            {
+                "string": "zoogdier",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Hoeveel weegt een volwassen stokstaartje?",
+        "answer": [
+            {
+                "string": "725 gram",
+                "uri": "https://www.wikidata.org/wiki/Q134015"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Welke kleuren heeft een orka?",
+        "answer": [
+            {
+                "string": "zwart en wit",
+                "uri": "https://www.wikidata.org/wiki/Q26843"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Sinds hoe lang leven er al mieren?",
+        "answer": [
+            {
+                "string": "140 miljoen jaar voor Christus",
+                "uri": "https://www.wikidata.org/wiki/Q7386"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Wat is de taxon naam van de rode panda?",
+        "answer": [
+            {
+                "string": "Ailurus fulgens",
+                "uri": "https://www.wikidata.org/wiki/41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Wat voor patroon heeft een tijger?",
+        "answer": [
+            {
+                "string": "streep",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Wat is de langst geobserveerde levensduur van een nijlpaard?",
+        "answer": [
+            {
+                "string": "61.2 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q34505"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Wat is de IUCN behoud status?",
+        "answer": [
+            {
+                "string": "Bedreigde soort",
+                "uri": "https://www.wikidata.org/wiki/Q80378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Wat is het inheemse etiket van een orang-oetan?",
+        "answer": [
+            {
+                "string": "orang hutan",
+                "uri": "https://www.wikidata.org/wiki/Q41050"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4530896",
+        "string": "Wat is de bijtkrachtquoti\u00ebnt van een wolf?",
+        "answer": [
+            {
+                "string": "136",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Hoe lang is een blauwe vinvis?",
+        "answer": [
+            {
+                "string": "27.1 metre",
+                "uri": "https://www.wikidata.org/wiki/Q42196"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Wat zijn de grootste voedselbronnen voor de rode panda?",
+        "answer": [
+            {
+                "string": "fruit",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "Bambuseae",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "acorn",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "moss",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "egg as food",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "bird",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            },
+            {
+                "string": "insect",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Wat is de levensverwachting van een koala?",
+        "answer": [
+            {
+                "string": "10 year",
+                "uri": "https://www.wikidata.org/wiki/Q36101"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Wat is de wetenschappelijke naam voor een leeuw?",
+        "answer": [
+            {
+                "string": "Panthera leo",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Wat voor kleuren heeft een lieveheersbeestje?",
+        "answer": [
+            {
+                "string": "red",
+                "uri": "https://www.wikidata.org/wiki/Q25327"
+            },
+            {
+                "string": "black",
+                "uri": "https://www.wikidata.org/wiki/Q25327"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Hoeveel eitjes legt een gewone octopus per keer?",
+        "answer": [
+            {
+                "string": "80,000",
+                "uri": "https://www.wikidata.org/wiki/Q651361"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Wat is de conserveringsstatus van de axolotl?",
+        "answer": [
+            {
+                "string": "Critically Endangered",
+                "uri": "https://www.wikidata.org/wiki/Q22718"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Is de axolotl een dagdier of een nachtdier?",
+        "answer": [
+            {
+                "string": "nocturnal",
+                "uri": "https://www.wikidata.org/wiki/Q22718"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Wat voor bomen eten bevers het meest?",
+        "answer": [
+            {
+                "string": "Aspen",
+                "uri": "https://www.wikidata.org/wiki/Q81056"
+            },
+            {
+                "string": "Poplar",
+                "uri": "https://www.wikidata.org/wiki/Q81056"
+            },
+            {
+                "string": "Willow",
+                "uri": "https://www.wikidata.org/wiki/Q81056"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4386752",
+        "string": "Hoe lang is een bruine beer zwanger?",
+        "answer": [
+            {
+                "string": "6-8 month",
+                "uri": "https://www.wikidata.org/wiki/Q36341"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Hoe zwaar is een ijsbeer?",
+        "answer": [
+            {
+                "string": "450 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Waar leeft de kangeroe?",
+        "answer": [
+            {
+                "string": "Australian continent",
+                "uri": "https://www.wikidata.org/wiki/Q5070208"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Hoe oud wordt een Duitse Herder?",
+        "answer": [
+            {
+                "string": "10 years",
+                "uri": "https://www.wikidata.org/wiki/Q38280"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Hoe heet een goudvis in het Duits?",
+        "answer": [
+            {
+                "string": "Goldfisch",
+                "uri": "https://www.wikidata.org/wiki/Q123141"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Wat is de spanwijde van een roodborstje?",
+        "answer": [
+            {
+                "string": "21 centimetre",
+                "uri": "https://www.wikidata.org/wiki/Q25334"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Kan een pinguin vliegen?",
+        "answer": [
+            {
+                "string": "flightless bird",
+                "uri": "https://www.wikidata.org/wiki/Q9147"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Hoe zwaar is een gemiddelde tijger?",
+        "answer": [
+            {
+                "string": "1.19\u00b10.41 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Hoe noem je in het Frans een muis?",
+        "answer": [
+            {
+                "string": "souris",
+                "uri": "https://www.wikidata.org/wiki/Q2751034"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Wat is de unicode van een character van een slak?",
+        "answer": [
+            {
+                "string": "\ud83d\udc0c",
+                "uri": "https://www.wikidata.org/wiki/Q308841"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4568966",
+        "string": "Wat is de wetenschappelijke naam vn een blobvis?",
+        "answer": [
+            {
+                "string": "Psychrolutes marcidus",
+                "uri": "https://www.wikidata.org/wiki/Q82288"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Waarom migreren vogels?",
+        "answer": [
+            {
+                "string": "klimaat",
+                "uri": "https://www.wikidata.org/wiki/Q216507"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Waar zijn rosse grutto's te vinden?",
+        "answer": [
+            {
+                "string": "Brazili\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q18864"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Kan je de rosse grutto in Kazachstan vinden?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q18864"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Welke leeuw is zwaarder: mannelijke of vrouwelijke?",
+        "answer": [
+            {
+                "string": "Mannelijke",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Is het vogelbekdier uitgestorven?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Wanneer is de Megalodon uitgestorven?",
+        "answer": [
+            {
+                "string": "2600000 jaar voor Christus",
+                "uri": "https://www.wikidata.org/wiki/Q163873"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Is de struisvogel ovipaar?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q17592"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "In welk jaar is de eerste informatie over de reuzemanta gepubliceerd?",
+        "answer": [
+            {
+                "string": "1792",
+                "uri": "https://www.wikidata.org/wiki/Q321976"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Hoe oud was de oudste walvishaai die ooit heeft geleefd?",
+        "answer": [
+            {
+                "string": "54 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q80378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4790383",
+        "string": "Hoe hard kunnen katten bijten?",
+        "answer": [
+            {
+                "string": "58",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Wat is het grootste landdier ter wereld?",
+        "answer": [
+            {
+                "string": "blauwe vinvis",
+                "uri": "https://www.wikidata.org/wiki/Q42196"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Wat is de snelste vogel ter wereld?",
+        "answer": [
+            {
+                "string": "slechtvalk",
+                "uri": "https://www.wikidata.org/wiki/Q30535"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Is een schaap een zoogdier?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q7368"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Wat is de rust hartslag van een wolf?",
+        "answer": [
+            {
+                "string": "90",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Wat is de actieve hartslag van een wolf?",
+        "answer": [
+            {
+                "string": "200 bpm",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Wat is de gemiddelde levensverwachting van een Canadese bever?",
+        "answer": [
+            {
+                "string": "15\u00b11 year",
+                "uri": "https://www.wikidata.org/wiki/Q81056"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Wat eet een Canadese bever?",
+        "answer": [
+            {
+                "string": "aspen",
+                "uri": "https://www.wikidata.org/wiki/Q81056"
+            },
+            {
+                "string": "populier",
+                "uri": "https://www.wikidata.org/wiki/Q81056"
+            },
+            {
+                "string": "wilg",
+                "uri": "https://www.wikidata.org/wiki/Q81056"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Hoe lang is een giraffe?",
+        "answer": [
+            {
+                "string": "5.5\u00b10.5",
+                "uri": "https://www.wikidata.org/wiki/Q15083"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4781619",
+        "string": "Wat is de latijnse naam van een krabbenetende wasbeer?",
+        "answer": [
+            {
+                "string": "Procyon cancrivorus",
+                "uri": "https://www.wikidata.org/wiki/Q405403"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "Wanneer ontstonden de eerste insecten?",
+        "answer": [
+            {
+                "string": "400 miljoen jaar voor Christus",
+                "uri": "https://www.wikidata.org/wiki/Q1390"
+            }
+        ]
+    },
+    {
+        "studentnumber": "S4850971",
+        "string": "Hoe oud kunnen een edelherten worden?",
+        "answer": [
+            {
+                "string": "31.5 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q79794"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "Eten olifanten planten?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "Wanneer is de Bizon bonasus het dier van het jaar geweest?",
+        "answer": [
+            {
+                "string": "2008",
+                "uri": "https://www.wikidata.org/wiki/Q81091"
+            },
+            {
+                "string": "2014",
+                "uri": "https://www.wikidata.org/wiki/Q81091"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "In wat voor omgeving leeft de Amerikaanse alligator",
+        "answer": [
+            {
+                "string": "moeras",
+                "uri": "https://www.wikidata.org/wiki/Q193327"
+            },
+            {
+                "string": "tropen",
+                "uri": "https://www.wikidata.org/wiki/Q193327"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "Is een Amerikaanse zilver arend zwaarder dan 30g?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q475664"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "wat is de bijtkracht van een wolf?",
+        "answer": [
+            {
+                "string": "136",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "Waarvoor wordt een hond gebruikt?",
+        "answer": [
+            {
+                "string": "huisdier",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "jager",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "bewaker",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "hulpdier",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "medische behandeling",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "politiewerk",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "Kan een kat harder schreeuwen dan 40 hertz?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850971",
+        "string": "Wat is de hartslag van een kip?",
+        "answer": [
+            {
+                "string": "275\u00b125 slagen per minuut",
+                "uri": "https://www.wikidata.org/wiki/Q780"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Hoe lang zijn olifanten zwanger?",
+        "answer": [
+            {
+                "string": "22 maanden",
+                "uri": "https://www.wikidata.org/wiki/Q36557"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Welk dieet volgen leeuwen?",
+        "answer": [
+            {
+                "string": "Vleesetend",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Komen kangeroos natuurlijk voor in Nieuw-Zeeland?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q5070208"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Zijn ijsberen zwaarder dan 400 kilogram?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Welk jaar is de dodo uitgestorven?",
+        "answer": [
+            {
+                "string": "1690",
+                "uri": "https://www.wikidata.org/wiki/Q43502"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Welk dier representeerd de Verenidge Staten van Amerika?",
+        "answer": [
+            {
+                "string": "Amerikaanse zeearend",
+                "uri": "https://www.wikidata.org/wiki/Q127216"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Welk dier heeft een streep patroon en is gekleurd oranje, zwart en wit?",
+        "answer": [
+            {
+                "string": "Tijger",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Wat is de grootste vogel die niet kan vliegen?",
+        "answer": [
+            {
+                "string": "Struisvogel",
+                "uri": "https://www.wikidata.org/wiki/Q17592"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Wanneer zijn nijlpaarden het meest actief: dag of nacht?",
+        "answer": [
+            {
+                "string": "Nacht",
+                "uri": "https://www.wikidata.org/wiki/Q34505"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4157427",
+        "string": "Wat voor dier is de Dickcissel?",
+        "answer": [
+            {
+                "string": "Vogel",
+                "uri": "https://www.wikidata.org/wiki/Q1210224"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Hoeveel weegt een pasgeboren reuzenpanda?",
+        "answer": [
+            {
+                "string": "104 gram",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Wat is het grootste dier ter wereld?",
+        "answer": [
+            {
+                "string": "blauwe vinvis",
+                "uri": "https://www.wikidata.org/wiki/Q42196"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Hoe lang is het grootste dier ter wereld?",
+        "answer": [
+            {
+                "string": "27.1 meter",
+                "uri": "https://www.wikidata.org/wiki/Q42196"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Welk zoogdier legt eieren?",
+        "answer": [
+            {
+                "string": "vogelbekdier",
+                "uri": "https://www.wikidata.org/wiki/Q15343"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Wanneer is de internationale dag van de ijsbeer?",
+        "answer": [
+            {
+                "string": "27 februari",
+                "uri": "https://www.wikidata.org/wiki/Q18351863"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Wat is de habitat van een tijger?",
+        "answer": [
+            {
+                "string": "bos",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Hoe groot is een olifant?",
+        "answer": [
+            {
+                "string": "4 meter",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Welke vogel heeft de grootste spanwijdte?",
+        "answer": [
+            {
+                "string": "Grote albatros",
+                "uri": "https://www.wikidata.org/wiki/Q208682"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Is de egel een bedreigde diersoort?",
+        "answer": [
+            {
+                "string": "nee",
+                "uri": "https://www.wikidata.org/wiki/Q6145"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3181197",
+        "string": "Wat zijn de mannelijke en vrouwelijke namen voor een rund?",
+        "answer": [
+            {
+                "string": "stier",
+                "uri": "https://www.wikidata.org/wiki/Q693690"
+            },
+            {
+                "string": "koe",
+                "uri": "https://www.wikidata.org/wiki/Q11748378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Wat voor soort geluid maakt een schaap?",
+        "answer": [
+            {
+                "string": "blaten",
+                "uri": "https://www.wikidata.org/wiki/Q7368"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Wat is de langst bekende levensduur van een rund?",
+        "answer": [
+            {
+                "string": "48 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q830"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Wanneer verschenen de eerste zoogdieren op aarde?",
+        "answer": [
+            {
+                "string": "160 miljoen jaar v.Chr.",
+                "uri": "https://www.wikidata.org/wiki/Q7377"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Behoort de tijger tot de subklasse van grote katten?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Welke voornaamste voedselbron hebben ijsberen?",
+        "answer": [
+            {
+                "string": "zeehonden zonder oren",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            },
+            {
+                "string": "rendieren",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            },
+            {
+                "string": "dolfijnen",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            },
+            {
+                "string": "vissen",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            },
+            {
+                "string": "vogels",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Wat is de voornaamste voedselbron van een leeuw?",
+        "answer": [
+            {
+                "string": "herkauwers",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "In welke vakgebieden worden dieren bestudeerd?",
+        "answer": [
+            {
+                "string": "zoologie",
+                "uri": "https://www.wikidata.org/wiki/Q729"
+            },
+            {
+                "string": "biologie",
+                "uri": "https://www.wikidata.org/wiki/Q729"
+            },
+            {
+                "string": "diergeneeskunde",
+                "uri": "https://www.wikidata.org/wiki/Q729"
+            },
+            {
+                "string": "dierstudies",
+                "uri": "https://www.wikidata.org/wiki/Q729"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Hoelang is de gemiddelde draagtijd van een kat?",
+        "answer": [
+            {
+                "string": "64 dagen",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Hoe oud is de oudste rode panda geworden? ",
+        "answer": [
+            {
+                "string": "19 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4977068",
+        "string": "Wanneer ontstonden de eerste reptielen?",
+        "answer": [
+            {
+                "string": "312 miljoen jaar v.Chr.",
+                "uri": "https://www.wikidata.org/wiki/Q10811"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Is een olifant grijs?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Is een spin een insect?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q1357"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Tot welke familie behoort de tijger?",
+        "answer": [
+            {
+                "string": "Panthera",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Wanneer is de dodo uitgestorven?",
+        "answer": [
+            {
+                "string": "1690",
+                "uri": "https://www.wikidata.org/wiki/Q43502"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Hoeveel weegt een panda?",
+        "answer": [
+            {
+                "string": "117,5\u00b142,5 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Wat is de spanwijdte van een condor?",
+        "answer": [
+            {
+                "string": "3,048 meter",
+                "uri": "https://www.wikidata.org/wiki/Q170598"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Wat zijn 5 dingen die een wolf eet?",
+        "answer": [
+            {
+                "string": "konijn",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "haas",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "eland",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "bison",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "rendier",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Hoe lang broedt een struisvogel?",
+        "answer": [
+            {
+                "string": "42 dag",
+                "uri": "https://www.wikidata.org/wiki/Q17592"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Hoe hard bijt een leeuw?",
+        "answer": [
+            {
+                "string": "112",
+                "uri": "https://www.wikidata.org/wiki/Q140"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3726134",
+        "string": "Waar leeft een luipaard?",
+        "answer": [
+            {
+                "string": "struweel",
+                "uri": "https://www.wikidata.org/wiki/Q34706"
+            },
+            {
+                "string": "bos",
+                "uri": "https://www.wikidata.org/wiki/Q34706"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Wat is de kleinste kameleon op aarde?",
+        "answer": [
+            {
+                "string": "Brookesia micra",
+                "uri": "https://www.wikidata.org/wiki/Q232278"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Wat is het leefgebied van de giraffe?",
+        "answer": [
+            {
+                "string": "Savanne (landschap)",
+                "uri": "https://www.wikidata.org/wiki/Q42320"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Welke kleuren kan een tijger zijn?",
+        "answer": [
+            {
+                "string": "oranje",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "zwart",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            },
+            {
+                "string": "wit",
+                "uri": "https://www.wikidata.org/wiki/Q19939"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Kun je me een lijst geven van alle berensoorten?",
+        "answer": [
+            {
+                "string": "Bruine beer",
+                "uri": "https://www.wikidata.org/wiki/Q36341"
+            },
+            {
+                "string": "Ijsbeer",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            },
+            {
+                "string": "Aziatische zwarte beer",
+                "uri": "https://www.wikidata.org/wiki/Q124410"
+            },
+            {
+                "string": "Amerikaanse zwarte beer",
+                "uri": "https://www.wikidata.org/wiki/Q122783"
+            },
+            {
+                "string": "Maleise beer",
+                "uri": "https://www.wikidata.org/wiki/Q144923"
+            },
+            {
+                "string": "Lippenbeer",
+                "uri": "https://www.wikidata.org/wiki/Q145016"
+            },
+            {
+                "string": "Brilbeer",
+                "uri": "https://www.wikidata.org/wiki/Q137641"
+            },
+            {
+                "string": "Reuzenpanda",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Kan een reuzenpanda meer dan 1 kind per nest krijgen?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q33602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Welke beer is zwaarder, de reuzenpanda of de ijsbeer?",
+        "answer": [
+            {
+                "string": "Ijsbeer",
+                "uri": "https://www.wikidata.org/wiki/Q33609"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Welke dagvlinder heeft de grootste spanwijdte?",
+        "answer": [
+            {
+                "string": "Alexandra's vogelvlinder",
+                "uri": "https://www.wikidata.org/wiki/Q932602"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Is bij de Pekingees, de man of de vrouw zwaarder?",
+        "answer": [
+            {
+                "string": "De vrouw",
+                "uri": "https://www.wikidata.org/wiki/Q38959"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3792412",
+        "string": "Hoe staan de blauwgespikkelde pijlstaartroggen bekend in Duitsland?",
+        "answer": [
+            {
+                "string": "Blaupunktrochen",
+                "uri": "https://www.wikidata.org/wiki/Q964954"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Wat is de wetenschappelijke naam van een capibara?",
+        "answer": [
+            {
+                "string": "Hydrochoerus hydrochaeris",
+                "uri": "https://www.wikidata.org/wiki/Q131538"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Wat is de spanwijdte van de blauwe reiger?",
+        "answer": [
+            {
+                "string": "1.73 meter",
+                "uri": "https://www.wikidata.org/wiki/Q25273"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Is de blauwe reiger een vogelsoort?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q25273 "
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Is de jaguar een vogelsoort?",
+        "answer": [
+            {
+                "string": "Nee",
+                "uri": "https://www.wikidata.org/wiki/Q35694"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Hoe oud is de oudste Europese otter geworden?",
+        "answer": [
+            {
+                "string": "18.2 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q29995"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Hoe noem je de studie van mieren?",
+        "answer": [
+            {
+                "string": "Myrmecologie",
+                "uri": "https://www.wikidata.org/wiki/Q7386"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Hoe oud worden snoeken gemiddeld?",
+        "answer": [
+            {
+                "string": "7 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q165278"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Waar is de baars een invasieve soort?",
+        "answer": [
+            {
+                "string": "Australi\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q166812"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "In welke twee jaren won de slechtvalk de onderscheiding 'vogel van het jaar'?",
+        "answer": [
+            {
+                "string": "1971",
+                "uri": "https://www.wikidata.org/wiki/Q30535"
+            },
+            {
+                "string": "2018",
+                "uri": "https://www.wikidata.org/wiki/Q30535"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s3969762",
+        "string": "Hoe lang is de draagtijd van Bonobo's?",
+        "answer": [
+            {
+                "string": "8 maanden",
+                "uri": "https://www.wikidata.org/wiki/Q19537"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Is een olifant is een zoogdier?",
+        "answer": [
+            {
+                "string": "Ja",
+                "uri": "https://www.wikidata.org/wiki/Q7378"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Wat is de langst gemeten levensduur van een eekhoorn?",
+        "answer": [
+            {
+                "string": "14.8 jaar",
+                "uri": "https://www.wikidata.org/wiki/Q4388"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Welk zoogdier heeft een langstgemeten levensduur van 22.6 jaar, een broedperiode van 10 dagen en komt voor in Australi\u00eb?",
+        "answer": [
+            {
+                "string": "vogelbekdier",
+                "uri": "https://www.wikidata.org/wiki/Q15343"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Wat is de nestgrootte van duiven?",
+        "answer": [
+            {
+                "string": "2 eieren",
+                "uri": "https://www.wikidata.org/wiki/Q10856"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Hoeveel weegt een vrouwelijke Amerikaanse zeearend?",
+        "answer": [
+            {
+                "string": "5.35 kilogram",
+                "uri": "https://www.wikidata.org/wiki/Q127216"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Wat is de spanwijdte van een Amerikaanse zeearend?",
+        "answer": [
+            {
+                "string": "2.3 meter",
+                "uri": "https://www.wikidata.org/wiki/Q127216"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Sinds wanneer bestaat de alligator?",
+        "answer": [
+            {
+                "string": "37 miljoen jaar BCE",
+                "uri": "https://www.wikidata.org/wiki/Q530397"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "In welk jaar heeft de gekko een wetenschappelijke naam gekregen?",
+        "answer": [
+            {
+                "string": "1852",
+                "uri": "https://www.wikidata.org/wiki/Q15872"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Wat is het verspreidingsgebied een alpaca?",
+        "answer": [
+            {
+                "string": "Chili",
+                "uri": "https://www.wikidata.org/wiki/Q81564"
+            },
+            {
+                "string": "Bolivia",
+                "uri": "https://www.wikidata.org/wiki/Q81564"
+            },
+            {
+                "string": "Argentini\u00eb",
+                "uri": "https://www.wikidata.org/wiki/Q81564"
+            },
+            {
+                "string": "Peru",
+                "uri": "https://www.wikidata.org/wiki/Q81564"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4850998",
+        "string": "Wat zijn de hoofdvoedselbronnen van de wolf?",
+        "answer": [
+            {
+                "string": "konijn",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Haas",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "eland",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Bison",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "aas",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "rendier",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "hertachtigen",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Muskusos",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Wild zwijn",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Ovis orientalis",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Rupicapra",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "steenbok",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "lemmingen",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "woelmuizen",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Beverachtigen",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "schaap",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "rund",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "hond",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "kat",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "bes",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "appel",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "peer",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "druif",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "gras",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "zalm",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Muildierhert",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "ree",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "edelhert",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "gewone vos",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "beverrat",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Wasbeerhond",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "vogel",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "vissen",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "Europese moeflon",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "wapiti",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            },
+            {
+                "string": "voedselverspilling",
+                "uri": "https://www.wikidata.org/wiki/Q18498"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Wat is de volledige wetenschappelijke naam van een kat?",
+        "answer": [
+            {
+                "string": "Felis silvestris catus",
+                "uri": "https://www.wikidata.org/wiki/Q146"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Zijn impala's een bedreigde diersoort?",
+        "answer": [
+            {
+                "string": "nee",
+                "uri": "https://www.wikidata.org/wiki/Q132576"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Waar is een hond goed voor?",
+        "answer": [
+            {
+                "string": "huisdier",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "jacht",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "wachter",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "hulpdier",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            },
+            {
+                "string": "therapie",
+                "uri": "https://www.wikidata.org/wiki/Q144"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Wie bedacht de naam Boa constrictor?",
+        "answer": [
+            {
+                "string": "Carl Linnaeus",
+                "uri": "https://www.wikidata.org/wiki/Q492841"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Wie had de rode panda een geldige naam gegeven?",
+        "answer": [
+            {
+                "string": "Fr\u00e9d\u00e9ric Cuvier",
+                "uri": "https://www.wikidata.org/wiki/Q41960"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Wat kan je maken van een konijn?",
+        "answer": [
+            {
+                "string": "konijnenbont",
+                "uri": "https://www.wikidata.org/wiki/Q9394"
+            },
+            {
+                "string": "konijnenvlees",
+                "uri": "https://www.wikidata.org/wiki/Q9394"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Eten we de eieren van vogels?",
+        "answer": [
+            {
+                "string": "ja",
+                "uri": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Waar eet een muis van?",
+        "answer": [
+            {
+                "string": "zaad",
+                "uri": "https://www.wikidata.org/wiki/Q39275"
+            },
+            {
+                "string": "wortel",
+                "uri": "https://www.wikidata.org/wiki/Q39275"
+            },
+            {
+                "string": "blad",
+                "uri": "https://www.wikidata.org/wiki/Q39275"
+            },
+            {
+                "string": "insect",
+                "uri": "https://www.wikidata.org/wiki/Q39275"
+            },
+            {
+                "string": "voedsel",
+                "uri": "https://www.wikidata.org/wiki/Q39275"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Hoe heet een kever in het Frans?",
+        "answer": [
+            {
+                "string": "col\u00e9opt\u00e8re",
+                "uri": "https://www.wikidata.org/wiki/Q22671"
+            }
+        ]
+    },
+    {
+        "studentnumber": "s4766105",
+        "string": "Wat is de gemiddelde hartslag van een paard?",
+        "answer": [
+            {
+                "string": "38 slagen per minuut",
+                "uri": "https://www.wikidata.org/wiki/Q726"
+            }
+        ]
+    }
+]
