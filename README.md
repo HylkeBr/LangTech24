@@ -9,6 +9,7 @@ Final project Language Technology 2024
   -  Filteren op correcte antwoorden op een of andere manier?
 - Meer verschillende soorten vragen matchen
   - Kun je me een lijst geven van alle berensoorten?
+  - Is een reuzenpanda een herbivoor?
 - Output formaat aanpassen naar wat nodig is voor inleveren
   - JSON oid geloof ik
 - Wellicht nog meer/andere dingen
@@ -30,6 +31,14 @@ Final project Language Technology 2024
   - Hoe hoog is [een dier]?
   - Hoe heet [een dier] in [een taal]?
     - all available languages supported
+  - Behoort [een dier] tot de [een klasse]? (regex, boolean)
+  - Eet [een dier] [eten]? (regex, boolean)
+  - Hoe groot kan [een dier] worden? (regex)
+  - Hoe lang is [een dier] zwanger? (regex)
+  - Hoe oud is de oudste [dier] (ooit) geworden? (regex)
+  - (Sinds/vanaf) wanneer bestaat [een dier]? (regex)
+  - (Sinds/vanaf) wanneer is [een dier] uitgestorven? (regex)
+
 
 - Geeft lijst met alle gevonden antwoorden
   - Ook wanneer dit niet de bedoeling is
