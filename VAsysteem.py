@@ -215,6 +215,24 @@ def find_QP(sent):
             if find_dep(parse, word) == 'nmod':
                 result = langcodes.find(word)
                 lan_list = [str(result)]
+    # "hoe groot kan [een dier] worden?"
+    elif re.match("Hoe groot kan.*worden?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'xcomp':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = categoryOf("groot")
+    # "hoe lang is [een dier] zwanger?"
+    elif re.match("Hoe lang is.*zwanger?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "draagtijd"
+    # "hoe oud is de oudste [een dier] geworden?"
+    elif re.match("Hoe oud is de oudste.*geworden?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj' or find_dep(parse, word) == 'xcomp':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "hoogst geobserveerde levensduur"
     # questions starting with 'hoe'
     elif parse[0].lemma_.lower() == 'hoe':
         for word in sent_cl.split():
@@ -248,6 +266,35 @@ def find_QP(sent):
             if find_dep(parse, word) == 'obj':
                 query_dict['Q'] = [categoryOf(word)]
                 query_dict['P'] = "nestgrootte"
+    # "(sinds/vanaf) wanneer is [een dier] uitgestorven?"
+    elif re.match("(?:Sinds |Vanaf )?(W|w)anneer is.*uitgestorven?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "einddatum"
+    # "(sinds/vanaf) wanneer bestaat [een dier]?"
+    elif re.match("(?:Sinds |Vanaf )?(W|w)anneer bestaat.*?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "begindatum"
+    # "behoort [eem dier] tot de [klasse]?"
+    elif re.match("Behoort.*tot de.*?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                Q1 = [categoryOf(word)]
+            elif find_dep(parse, word) == 'obl':
+                Q2 = [categoryOf(word)]
+                query_dict['P'] = getIDs("subklasse van", p=True)[0]
+        query_dict['Q'] = [Q1, Q2]
+    # "eet [een dier] [eten]?"
+    elif re.match("Eet.*?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'amod':
+                Q1 = [categoryOf(word)]
+            elif find_dep(parse, word) == 'obj':
+                Q2 = [categoryOf(word)]
+                query_dict['P'] = getIDs("belangrijkste voedselbron", p=True)[0]
     elif re.match("Hoeveel weegt.*", sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
