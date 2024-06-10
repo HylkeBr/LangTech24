@@ -2,6 +2,8 @@ import requests
 import time
 import spacy
 import json
+import re
+import langcodes
 
 nlp = spacy.load("nl_core_news_lg")
 
@@ -187,6 +189,8 @@ def categoryOf(word):
 def find_QP(sent):
     sent_cl = rm_punct(sent)
     query_dict = {}
+    extra_dict = {}
+    lan_list = []
     parse = nlp(sent)
 
     # questions starting with 'welk(e)'
@@ -202,6 +206,15 @@ def find_QP(sent):
                     query_dict['P'] = categoryOf(word)
                 else:
                     query_dict['Q'] = [categoryOf(word)]
+    # questions on name of animal in other language
+    elif re.match("Hoe heet.*in het.*", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "triviale naam"
+            if find_dep(parse, word) == 'nmod':
+                result = langcodes.find(word)
+                lan_list = [str(result)]
     # questions starting with 'hoe'
     elif parse[0].lemma_.lower() == 'hoe':
         for word in sent_cl.split():
@@ -220,6 +233,39 @@ def find_QP(sent):
                 P1 = categoryOf(word)
         query_dict['Q'] = [Q1, Q2]
         query_dict['P'] = P1
+    elif re.match("Waar is.*goed voor?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "gebruik"
+    elif re.match("Waar komt.*voor?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "endemisch in"
+    elif re.match("Hoeveel jongen krijgt.*?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'obj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "nestgrootte"
+    elif re.match("Hoeveel weegt.*", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "massa"
+            elif find_dep(parse, word) == 'amod':
+                if word == "pasgeboren":
+                    extra_dict['Q'] = getIDs("geboortegewicht")[0]
+                    extra_dict['P'] = getIDs("van", p=True)[0]
+                if word == "volwassen":
+                    extra_dict['Q'] = getIDs("volwassen gewicht")[0]
+                    extra_dict['P'] = getIDs("van", p=True)[0]
+                if word == "mannelijke":
+                    extra_dict['Q'] = getIDs("mannelijk organisme")[0]
+                    extra_dict['P'] = getIDs("sekse of geslacht", p=True)[0]
+                if word == "vrouwelijke":
+                    extra_dict['Q'] = getIDs("vrouwelijke organisme")[0]
+                    extra_dict['P'] = getIDs("sekse of geslacht", p=True)[0]
 
     # questions starting with 'wat' / the rest
     else: 
@@ -227,10 +273,10 @@ def find_QP(sent):
         query_dict['Q'] = [d['subject']]
         query_dict['P'] = d['property']
 
-    return query_dict
+    return query_dict, extra_dict, lan_list
 
 '''Create query, based on given IDs'''
-def createQueries(qIDs, pIDs):
+def createQueries(qIDs, pIDs, extra, lan):
     qs = []
     if len(qIDs) == 1:
         qIDs = qIDs[0]
@@ -240,10 +286,22 @@ def createQueries(qIDs, pIDs):
             if animalID(ID):
                 ID1s.append(ID)
         # Generate queries based on differend ID combinations
-        for ID1 in ID1s:
-            for ID2 in pIDs:
-                query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
-                qs.append(query)
+        if extra == {} and lan == []:
+            for ID1 in ID1s:
+                for ID2 in pIDs:
+                    query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    qs.append(query)
+        # Generate statement query
+        elif lan != []:
+            for ID1 in ID1s:
+                for ID2 in pIDs:
+                    query = 'SELECT ?label WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language "' + lan[0] + '". wd:' + ID1 + ' rdfs:label ?label. }}'
+                    qs.append(query)
+        else:
+            for ID1 in ID1s:
+                for ID2 in pIDs:
+                    query = 'SELECT ?statement ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    qs.append(query)
     else: # Boolean question
         qID1s = qIDs[0]
         qID2s = qIDs[1]
@@ -260,13 +318,14 @@ def createQueries(qIDs, pIDs):
 '''Answers questions'''
 def answerQuestion(question):
     try:
-        keys = find_QP(question)
+        keys, extra, lan_list = find_QP(question)
         q_ids = []
         for qkey in keys['Q']:
             q_ids.append(getIDs(qkey))
         p_ids = getIDs(keys['P'], p=True)
+        lan = lan_list
 
-        queries = createQueries(q_ids, p_ids)
+        queries = createQueries(q_ids, p_ids, extra, lan)
 
         answers = []
         for query in queries:
@@ -303,7 +362,7 @@ def main():
         #answerQuestion(question)
         #print()
 
-    q1 = 'Hoe groot is een olifant?'
+    q1 = "Hoe heet een goudvis in het Italiaans?"
     q2 = 'Welke kleur heeft een ijsbeer?'
     q3 = 'Welke commonscategorie past bij de olifant?'
     q4 = 'Hoe lang is een giraffe?'
