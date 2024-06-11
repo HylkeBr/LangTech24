@@ -67,7 +67,7 @@ def animalID(ID):
     result2 = getAnswer(query2)
     if result2 != []:
         # If dier is in description, it probably is an animal.
-        if 'dier' in result2[0]:
+        if 'dier' or 'bird' in result2[0]:
             isAnimal = True
     return isAnimal
 
@@ -396,7 +396,8 @@ def find_QP(sent):
         'levensverwachting', 'hoogst geobserveerde levensduur',
         'minimale frequentie van hoorbaar geluid', 
         'maximale frequentie van hoorbaar geluid',
-        'hartslag', 'draagtijd', 'broedperiode', 'snelheid'
+        'hartslag', 'draagtijd', 'broedperiode', 'snelheid',
+        'spanwijdte'
     ]:
         extra_dict['metricUnit'] = True
     else:
@@ -514,28 +515,28 @@ def main():
     #q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
     #q6 = 'Welke IUCN-status heeft de leeuw?'
     #q7 = 'Is een ijsbeer wit?'
-    questions = [
-        'Sinds wanneer leeft de dodo?',
-        'Hoe oud wordt een hond?',
-        'Welke kleuren heeft een duitse herder?',
-        'Is een reuzepanda herbivoor?',
-        'Is de reuzepanda een carnivoor?',
-        'Hoe zwaar is een volwassen mannetjes leeuw?',
-        'Wat is de wetenschappelijke naam van een hond?',
-        'Wat is de belangrijkste voedselbron van een orang-oetan?',
-        'Eet een ijsbeer vis?',
-        'Tot welk ras behoort de boerenfox?',
-        'Hoe lang is een kat zwanger?',
-        'Wat is de Engelse naam van een schol?'
-    ]
-    for q in questions:
-        print(q)
-        print(answerQuestion(q))
-        print()
-#    q = 'Waar leven orang-oetangs?'
-#    print(q)
-#    print(answerQuestion(q))
-#    print()
+    #questions = [
+        #'Sinds wanneer leeft de dodo?',
+        #'Hoe oud wordt een hond?',
+        #'Welke kleuren heeft een duitse herder?',
+        #'Is een reuzepanda herbivoor?',
+        #'Is de reuzepanda een carnivoor?',
+        #'Hoe zwaar is een volwassen mannetjes leeuw?',
+        #'Wat is de wetenschappelijke naam van een hond?',
+        #'Wat is de belangrijkste voedselbron van een orang-oetan?',
+        #'Eet een ijsbeer vis?',
+        #'Tot welk ras behoort de boerenfox?',
+        #'Hoe lang is een kat zwanger?',
+        #'Wat is de Engelse naam van een schol?'
+   # ]
+    #for q in questions:
+        #print(q)
+        #print(answerQuestion(q))
+        #print()
+    q = 'Wat is de spanwijdte van de korhoen?'
+    print(q)
+    print(answerQuestion(q))
+    print()
 #    output = []
 #    for question_data in questions:
 #        question_id = question_data['id']
