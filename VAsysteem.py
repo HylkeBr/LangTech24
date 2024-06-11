@@ -340,6 +340,12 @@ def find_QP(sent):
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
                 query_dict['P'] = 'begindatum'
+    # "(sinds/vanaf) wanneer leeft [een dier]?"
+    elif re.match('(?:Sinds |Vanaf )?(W|w)anneer leeft.*?', sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = 'begindatum'
     # "behoort [eem dier] tot de [klasse]?"
     elif re.match('Behoort.*tot de.*?', sent):
         for word in sent_cl.split():
@@ -509,7 +515,7 @@ def main():
     #q6 = 'Welke IUCN-status heeft de leeuw?'
     #q7 = 'Is een ijsbeer wit?'
     questions = [
-        'Wat is het gewicht van een rode panda?',
+        'Sinds wanneer leeft de dodo?',
         'Hoe oud wordt een hond?',
         'Welke kleuren heeft een duitse herder?',
         'Is een reuzepanda herbivoor?',
