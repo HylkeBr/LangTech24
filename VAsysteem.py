@@ -373,7 +373,7 @@ def find_QP(sent):
         'levensverwachting', 'hoogst geobserveerde levensduur',
         'minimale frequentie van hoorbaar geluid', 
         'maximale frequentie van hoorbaar geluid',
-        'hartslag', 'draagtijd'
+        'hartslag', 'draagtijd', 'broedperiode'
     ]:
         extra_dict['metricUnit'] = True
     else:
