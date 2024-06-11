@@ -4,7 +4,6 @@ Final project Language Technology 2024
 ## To do:
 - Maat achter antwoorden
   - Bv van '4' naar '4 meter'
-  - Answer all questions, i.e. include ’null’ as answer for questions your
     system could not answer
 - Bij meerdere gevonden antwoorden de beste er uit halen
   -  Niet wanneer om meerdere antwoorden gevraagd wordt
@@ -15,6 +14,7 @@ Final project Language Technology 2024
 - Wellicht nog meer/andere dingen
 
 ## Done:
+- Answer all questions, i.e. include ’null’ as answer for questions your
 - List questions have a single string as answer, containing multiple
   answers separated by a comma.
 - Soorten vragen:
