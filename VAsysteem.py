@@ -230,7 +230,6 @@ def find_QP(sent):
     elif re.match('Hoe heet.*in het.*', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'triviale naam'
@@ -247,7 +246,6 @@ def find_QP(sent):
     elif re.match('Hoe lang is.*zwanger?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'draagtijd'
@@ -261,17 +259,14 @@ def find_QP(sent):
     elif re.match('Hoe oud wordt.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'levensverwachting'
-    # "Hoe zwaar is een [dier]?"            
+    # "Hoe zwaar is een [dier]?"
     elif re.match('Hoe zwaar is.*', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
-                d = getKeywords(sent)
-                query_dict['Q'] = [d['property']]
+                query_dict['Q'] = [categoryOf(word)]
                 query_dict['P'] = 'massa'
             elif find_dep(parse, word) == 'amod':
                 if word == 'pasgeboren':
@@ -324,14 +319,12 @@ def find_QP(sent):
     elif re.match('Waar is.*goed voor?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'gebruik'
     elif re.match('Waar komt.*voor?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'endemisch in'
@@ -344,7 +337,6 @@ def find_QP(sent):
     elif re.match('(?:Sinds |Vanaf )?(W|w)anneer is.*uitgestorven?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'einddatum'
@@ -352,7 +344,6 @@ def find_QP(sent):
     elif re.match('(?:Sinds |Vanaf )?(W|w)anneer bestaat.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'begindatum'
@@ -360,15 +351,13 @@ def find_QP(sent):
     elif re.match('(?:Sinds |Vanaf )?(W|w)anneer leeft.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
                 d = getKeywords(sent)
                 query_dict['Q'] = [d['property']]
                 query_dict['P'] = 'begindatum'
-    # "behoort [eem dier] tot de [klasse]?"
+    # "behoort [een dier] tot de [klasse]?"
     elif re.match('Behoort.*tot de.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #Q1 = [categoryOf(word)]
                 d = getKeywords(sent)
                 Q1 = [d['property']]
             elif find_dep(parse, word) == 'obl':
@@ -388,10 +377,8 @@ def find_QP(sent):
     elif re.match('Hoeveel weegt.*', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
-                #query_dict['Q'] = [categoryOf(word)]
+                query_dict['Q'] = [categoryOf(word)]
                 query_dict['P'] = 'massa'
-                d = getKeywords(sent)
-                query_dict['Q'] = [d['property']]
             elif find_dep(parse, word) == 'amod':
                 if word == 'pasgeboren':
                     extra_dict['Q'] = getIDs('geboortegewicht')[0]
@@ -419,8 +406,7 @@ def find_QP(sent):
         'minimale frequentie van hoorbaar geluid', 
         'maximale frequentie van hoorbaar geluid',
         'hartslag', 'draagtijd', 'broedperiode', 'snelheid',
-        'spanwijdte'
-    ]:
+        'spanwijdte'    ]:
         extra_dict['metricUnit'] = True
     else:
         extra_dict['metricUnit'] = False
@@ -538,8 +524,8 @@ def main():
     #q6 = 'Welke IUCN-status heeft de leeuw?'
     #q7 = 'Is een ijsbeer wit?'
     questions = [
-        'Hoe lang is een rode panda zwanger?',
-        'Hoe lang is een leeuw zwanger?',
+        'Hoeveel weegt een mannelijke leeuw?',
+        'Hoe zwaar is een mannelijke leeuw?',
         'Welke kleuren heeft een duitse herder?',
         'Is een reuzepanda herbivoor?',
         'Is de reuzepanda een carnivoor?',
