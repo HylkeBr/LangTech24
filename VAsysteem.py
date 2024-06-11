@@ -242,7 +242,6 @@ def find_QP(sent):
     # "Hoe zwaar is een [dier]"            
     elif re.match("Hoe zwaar is.*", sent):
         for word in sent_cl.split():
-            print(find_dep(parse, word))
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
                 query_dict['P'] = "massa"
@@ -477,7 +476,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Hoe zwaar is een pasgeboren leeuw?'
+    q = 'Welke kleuren heeft een duitse herder?'
     print(q)
     print(answerQuestion(q))
     print()
