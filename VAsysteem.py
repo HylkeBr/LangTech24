@@ -394,15 +394,19 @@ def answerQuestion(question):
                             answer_given = True
                             return 'Nee'
                 else:
+                    ans_str = ''
                     for ansLabel in ans:
-                        return(ansLabel)
+                        ans_str += ansLabel
+                        if ansLabel != ans[-1]:
+                            ans_str += ', '
+                    return(ans_str)
     except Exception as e:
         print(f" - Er was een fout bij het beantwoorden van de vraag: {str(e)}")
         return None
 
 def main():
-    with open('simulate_input.json', 'r', encoding='utf-8') as f:
-       questions = json.load(f)
+#    with open('simulate_input.json', 'r', encoding='utf-8') as f:
+#       questions = json.load(f)
 
     #for question_data in questions:
         #question = question_data['string']
@@ -419,26 +423,29 @@ def main():
     #q7 = 'Is een ijsbeer wit?'
     #questions = [q1, q2, q3, q4, q5, q6, q7]
     #for q in questions:
-       # print(q)
+        #print(q)
         #answerQuestion(q)
         #print()
-    
-    output = []
-    for question_data in questions:
-        question_id = question_data['id']
-        question_text = question_data['question']
-        answer = answerQuestion(question_text)
-        correct = 1 if answer else 0
-    	
-        output.append({
-            "id": question_id,
-            "question": question_text,
-            "answer": answer,
-            "correct": correct
-        })
-    
-    with open('answers.json', 'w', encoding='utf-8') as f:
-        json.dump(output, f, indent=4)
+    q = 'Wat is de belangrijkste voedselbron van een tijger?'
+    print(q)
+    print(answerQuestion(q))
+    print()
+#    output = []
+#    for question_data in questions:
+#        question_id = question_data['id']
+#        question_text = question_data['question']
+#        answer = answerQuestion(question_text)
+#        correct = 1 if answer else 0
+#    	
+#        output.append({
+#            "id": question_id,
+#            "question": question_text,
+#            "answer": answer,
+#            "correct": correct
+#        })
+#    
+#    with open('answers.json', 'w', encoding='utf-8') as f:
+#        json.dump(output, f, indent=4)
 
 if __name__ == '__main__':
     main()
