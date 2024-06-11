@@ -381,7 +381,7 @@ def answerQuestion(question):
                 answers.append(answer)
 
         if len(answers) == 0:
-            return ' - Excuses. Ik heb op deze vraag geen antwoord kunnen vinden.'
+            return 'null'
         else:
             answer_given = False
             for ans in answers:
@@ -399,9 +399,9 @@ def answerQuestion(question):
                         ans_str += ansLabel
                         if ansLabel != ans[-1]:
                             ans_str += ', '
-                    return(ans_str)
+                    return ans_str
     except Exception as e:
-        print(f" - Er was een fout bij het beantwoorden van de vraag: {str(e)}")
+        print(f"Er was een fout bij het beantwoorden van de vraag: {str(e)}")
         return None
 
 def main():
