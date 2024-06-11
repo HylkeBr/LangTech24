@@ -388,54 +388,50 @@ def createQueries(qIDs, pIDs, extra, lan):
 
 '''Answers questions'''
 def answerQuestion(question):
-    try:
-        keys, extra, lan_list = find_QP(question)
-        q_ids = []
-        for qkey in keys['Q']:
-            q_ids.append(getIDs(qkey))
-        p_ids = getIDs(keys['P'], p=True)
-        lan = lan_list
 
-        queries = createQueries(q_ids, p_ids, extra, lan)
-
-        answers = []
-        for query in queries:
-            answer = getAnswer(query)
-            if answer != []:
-                answers.append(answer)
-
-        if len(answers) == 0:
-            return 'null'
-        else:
-            answer_given = False
-            for ans in answers:
-                if type(ans) == bool:
-                    if not answer_given:
-                        if True in answers:
-                            answer_given = True
-                            return 'Ja'
-                        else:
-                            answer_given = True
-                            return 'Nee'
-                else:
-                    ans_str = ''
-                    if extra['metricUnit']:
-                        for n in range(len(ans)):
-                            if n == 0 or n % 2 == 0:
-                                ans_str += ans[n]
-                                ans_str += ' '
-                                ans_str += ans[n+1]
-                            elif n != len(ans) - 1:
-                                ans_str += ', '
+    keys, extra, lan_list = find_QP(question)
+    q_ids = []
+    for qkey in keys['Q']:
+        q_ids.append(getIDs(qkey))
+    p_ids = getIDs(keys['P'], p=True)
+    lan = lan_list
+    queries = createQueries(q_ids, p_ids, extra, lan)
+    answers = []
+    for query in queries:
+        answer = getAnswer(query)
+        if answer != []:
+            answers.append(answer)
+    if len(answers) == 0:
+        return 'null'
+    else:
+        answer_given = False
+        for ans in answers:
+            if type(ans) == bool:
+                if not answer_given:
+                    if True in answers:
+                        answer_given = True
+                        return 'Ja'
                     else:
-                        for ansLabel in ans:
-                            ans_str += ansLabel
-                            if ansLabel != ans[-1]:
-                                ans_str += ', '
-                    return ans_str
-    except Exception as e:
-        print(f"Er was een fout bij het beantwoorden van de vraag: {str(e)}")
-        return None
+                        answer_given = True
+                        return 'Nee'
+            else:
+                ans_str = ''
+                if extra['metricUnit']:
+                    if len(ans) == 3:
+                        ans = ans[1:]
+                    for n in range(len(ans)):
+                        if n == 0 or n % 2 == 0:
+                            ans_str += ans[n]
+                            ans_str += ' '
+                            ans_str += ans[n+1]
+                        elif n != len(ans) - 1:
+                            ans_str += ', '
+                else:
+                    for ansLabel in ans:
+                        ans_str += ansLabel
+                        if ansLabel != ans[-1]:
+                            ans_str += ', '
+                return ans_str
 
 def main():
 #    with open('simulate_input.json', 'r', encoding='utf-8') as f:
@@ -459,7 +455,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Wat is de levensverwachting van een hond?'
+    q = 'Hoeveel weegt een pasgeboren leeuw?'
     print(q)
     print(answerQuestion(q))
     print()
