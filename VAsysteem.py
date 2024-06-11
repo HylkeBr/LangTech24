@@ -325,6 +325,14 @@ def find_QP(sent):
         d = getKeywords(sent)
         query_dict['Q'] = [d['subject']]
         query_dict['P'] = d['property']
+    
+    # Check whether or not there is need for a metric unit
+    if query_dict['P'] in [
+        'hoogte', 'lengte', 'breedte', 'massa'
+    ]:
+        extra_dict['metricUnit'] = True
+    else:
+        extra_dict['metricUnit'] = False
 
     return query_dict, extra_dict, lan_list
 
@@ -339,21 +347,27 @@ def createQueries(qIDs, pIDs, extra, lan):
             if animalID(ID):
                 ID1s.append(ID)
         # Generate queries based on differend ID combinations
-        if extra == {} and lan == []:
+        if list(extra.keys()) == ['metricUnit'] and lan == []:
             for ID1 in ID1s:
                 for ID2 in pIDs:
-                    query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    if extra['metricUnit']:
+                        query = 'SELECT ?ansLabel ?unitLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?x. ?x psv:' + ID2 + ' ?node. ?node wikibase:quantityAmount ?ans. ?node wikibase:quantityUnit ?unit. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    else: 
+                        query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     qs.append(query)
         # Generate statement query
         elif lan != []:
             for ID1 in ID1s:
                 for ID2 in pIDs:
-                    query = 'SELECT ?label WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language "' + lan[0] + '". wd:' + ID1 + ' rdfs:label ?label. }}'
+                    query = 'SELECT ?label WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language "' + lan[0] + '". wd:' + ID1 + ' rdfs:label ?label. } }'
                     qs.append(query)
         else:
             for ID1 in ID1s:
                 for ID2 in pIDs:
-                    query = 'SELECT ?statement ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    if extra['metricUnit']:
+                        query = 'SELECT ?statement ?ansLabel ?unitLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement psv:' + ID2 + '?node. ?node wikibase:quantityUnit ?unit. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    else: 
+                        query = 'SELECT ?statement ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     qs.append(query)
     else: # Boolean question
         qID1s = qIDs[0]
@@ -390,15 +404,6 @@ def answerQuestion(question):
             return 'null'
         else:
             answer_given = False
-            unit = ""
-            property_label = keys['P']
-
-            # Determine the appropriate unit
-            if property_label in ["levensverwachting", "hoogst geobserveerde levensduur"]:
-                unit = " jaar"
-            elif property_label in ["groot", "lengte", "hoogte"]:
-                unit = " meter"
-
             for ans in answers:
                 if type(ans) == bool:
                     if not answer_given:
@@ -410,11 +415,20 @@ def answerQuestion(question):
                             return 'Nee'
                 else:
                     ans_str = ''
-                    for ansLabel in ans:
-                        ans_str += ansLabel
-                        if ansLabel != ans[-1]:
-                            ans_str += ', '
-                    return ans_str + unit
+                    if extra['metricUnit']:
+                        for n in range(len(ans)):
+                            if n == 0 or n % 2 == 0:
+                                ans_str += ans[n]
+                                ans_str += ' '
+                                ans_str += ans[n+1]
+                            elif n != len(ans) - 1:
+                                ans_str += ', '
+                    else:
+                        for ansLabel in ans:
+                            ans_str += ansLabel
+                            if ansLabel != ans[-1]:
+                                ans_str += ', '
+                    return ans_str
     except Exception as e:
         print(f"Er was een fout bij het beantwoorden van de vraag: {str(e)}")
         return None
@@ -429,26 +443,22 @@ def main():
         #answerQuestion(question)
         #print()
 
-    q1 = "Hoe heet een goudvis in het Italiaans?"
-    q2 = 'Welke kleur heeft een ijsbeer?'
-    q3 = 'Welke commonscategorie past bij de olifant?'
-    q4 = 'Hoe lang is een giraffe?'
-    q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
-    q6 = 'Welke IUCN-status heeft de leeuw?'
-    q7 = 'Is een ijsbeer wit?'
-    q8 = 'Hoe oud wordt een hond?'
-    questions = [q1, q2, q3, q4, q5, q6, q7, q8]
-    for q in questions:
-        print(q)
-        print(answerQuestion(q))
-        print()
-    #q1 = 'Hoe oud wordt een hond?'
-    #q2 = 'Hoe lang is een giraffe?'
-    #questions2 = [q1, q2]
-    #for q in questions2:
+    #q1 = "Hoe heet een goudvis in het Italiaans?"
+    #q2 = 'Welke kleur heeft een ijsbeer?'
+    #q3 = 'Welke commonscategorie past bij de olifant?'
+    #q4 = 'Hoe lang is een giraffe?'
+    #q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
+    #q6 = 'Welke IUCN-status heeft de leeuw?'
+    #q7 = 'Is een ijsbeer wit?'
+    #questions = [q1, q2, q3, q4, q5, q6, q7]
+    #for q in questions:
         #print(q)
-        #print(answerQuestion(q))
+        #answerQuestion(q)
         #print()
+    q = 'Hoe groot is een olifant?'
+    print(q)
+    print(answerQuestion(q))
+    print()
 #    output = []
 #    for question_data in questions:
 #        question_id = question_data['id']
