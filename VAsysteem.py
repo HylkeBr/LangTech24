@@ -5,7 +5,7 @@ import json
 import re
 import langcodes
 
-nlp = spacy.load("nl_core_news_lg")
+nlp = spacy.load('nl_core_news_lg')
 
 '''Function to find answers to a given query'''
 def getAnswer(query): 
@@ -214,57 +214,57 @@ def find_QP(sent):
                 else:
                     query_dict['Q'] = [categoryOf(word)]
     # questions on name of animal in other language
-    elif re.match("Hoe heet.*in het.*", sent):
+    elif re.match('Hoe heet.*in het.*', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "triviale naam"
+                query_dict['P'] = 'triviale naam'
             if find_dep(parse, word) == 'nmod':
                 result = langcodes.find(word)
                 lan_list = [str(result)]
     # "hoe groot kan [een dier] worden?"
-    elif re.match("Hoe groot kan.*worden?", sent):
+    elif re.match('Hoe groot kan.*worden?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'xcomp':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = categoryOf("groot")
+                query_dict['P'] = categoryOf('groot')
     # "hoe lang is [een dier] zwanger?"
-    elif re.match("Hoe lang is.*zwanger?", sent):
+    elif re.match('Hoe lang is.*zwanger?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "draagtijd"
+                query_dict['P'] = 'draagtijd'
     # "hoe oud is de oudste [een dier] geworden?"
-    elif re.match("Hoe oud is de oudste.*geworden?", sent):
+    elif re.match('Hoe oud is de oudste.*geworden?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj' or find_dep(parse, word) == 'xcomp':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "hoogst geobserveerde levensduur"
+                query_dict['P'] = 'hoogst geobserveerde levensduur'
     # "hoe oud wordt een [dier]?"
-    elif re.match("Hoe oud wordt.*?", sent):
+    elif re.match('Hoe oud wordt.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "levensverwachting"
+                query_dict['P'] = 'levensverwachting'
     # "Hoe zwaar is een [dier]?"            
-    elif re.match("Hoe zwaar is.*", sent):
+    elif re.match('Hoe zwaar is.*', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "massa"
+                query_dict['P'] = 'massa'
             elif find_dep(parse, word) == 'amod':
-                if word == "pasgeboren":
-                    extra_dict['Q'] = getIDs("geboortegewicht")[0]
-                    extra_dict['P'] = getIDs("van", p=True)[0]
-                if word == "volwassen":
-                    extra_dict['Q'] = getIDs("volwassen gewicht")[0]
-                    extra_dict['P'] = getIDs("van", p=True)[0]
-                if word == "mannelijke":
-                    extra_dict['Q'] = getIDs("mannelijk organisme")[0]
-                    extra_dict['P'] = getIDs("sekse of geslacht", p=True)[0]
-                if word == "vrouwelijke":
-                    extra_dict['Q'] = getIDs("vrouwelijke organisme")[0]
-                    extra_dict['P'] = getIDs("sekse of geslacht", p=True)[0]
+                if word == 'pasgeboren':
+                    extra_dict['Q'] = getIDs('geboortegewicht')[0]
+                    extra_dict['P'] = getIDs('van', p=True)[0]
+                if word == 'volwassen':
+                    extra_dict['Q'] = getIDs('volwassen gewicht')[0]
+                    extra_dict['P'] = getIDs('van', p=True)[0]
+                if word == 'mannelijke':
+                    extra_dict['Q'] = getIDs('mannelijk organisme')[0]
+                    extra_dict['P'] = getIDs('sekse of geslacht', p=True)[0]
+                if word == 'vrouwelijke':
+                    extra_dict['Q'] = getIDs('vrouwelijke organisme')[0]
+                    extra_dict['P'] = getIDs('sekse of geslacht', p=True)[0]
     # questions starting with 'hoe'
     elif parse[0].lemma_.lower() == 'hoe':
         for word in sent_cl.split():
@@ -300,70 +300,70 @@ def find_QP(sent):
                                 Q2 = word
         query_dict['Q'] = [Q1, Q2]
         query_dict['P'] = P1
-    elif re.match("Waar is.*goed voor?", sent):
+    elif re.match('Waar is.*goed voor?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "gebruik"
-    elif re.match("Waar komt.*voor?", sent):
+                query_dict['P'] = 'gebruik'
+    elif re.match('Waar komt.*voor?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "endemisch in"
-    elif re.match("Hoeveel jongen krijgt.*?", sent):
+                query_dict['P'] = 'endemisch in'
+    elif re.match('Hoeveel jongen krijgt.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'obj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "nestgrootte"
+                query_dict['P'] = 'nestgrootte'
     # "(sinds/vanaf) wanneer is [een dier] uitgestorven?"
-    elif re.match("(?:Sinds |Vanaf )?(W|w)anneer is.*uitgestorven?", sent):
+    elif re.match('(?:Sinds |Vanaf )?(W|w)anneer is.*uitgestorven?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "einddatum"
+                query_dict['P'] = 'einddatum'
     # "(sinds/vanaf) wanneer bestaat [een dier]?"
-    elif re.match("(?:Sinds |Vanaf )?(W|w)anneer bestaat.*?", sent):
+    elif re.match('(?:Sinds |Vanaf )?(W|w)anneer bestaat.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "begindatum"
+                query_dict['P'] = 'begindatum'
     # "behoort [eem dier] tot de [klasse]?"
-    elif re.match("Behoort.*tot de.*?", sent):
+    elif re.match('Behoort.*tot de.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 Q1 = [categoryOf(word)]
             elif find_dep(parse, word) == 'obl':
                 Q2 = [categoryOf(word)]
-                query_dict['P'] = getIDs("subklasse van", p=True)[0]
+                query_dict['P'] = getIDs('subklasse van', p=True)[0]
         query_dict['Q'] = [Q1, Q2]
     # "eet [een dier] [eten]?"
-    elif re.match("Eet.*?", sent):
+    elif re.match('Eet.*?', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'amod':
                 Q1 = [categoryOf(word)]
             elif find_dep(parse, word) == 'obj':
                 Q2 = [categoryOf(word)]
-                query_dict['P'] = getIDs("belangrijkste voedselbron", p=True)[0]
+                query_dict['P'] = getIDs('belangrijkste voedselbron', p=True)[0]
         query_dict['Q'] = [Q1, Q2]
     # "Hoeveel weegt [een dier]?"
-    elif re.match("Hoeveel weegt.*", sent):
+    elif re.match('Hoeveel weegt.*', sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
                 query_dict['Q'] = [categoryOf(word)]
-                query_dict['P'] = "massa"
+                query_dict['P'] = 'massa'
             elif find_dep(parse, word) == 'amod':
-                if word == "pasgeboren":
-                    extra_dict['Q'] = getIDs("geboortegewicht")[0]
-                    extra_dict['P'] = getIDs("van", p=True)[0]
-                if word == "volwassen":
-                    extra_dict['Q'] = getIDs("volwassen gewicht")[0]
-                    extra_dict['P'] = getIDs("van", p=True)[0]
-                if word == "mannelijke":
-                    extra_dict['Q'] = getIDs("mannelijk organisme")[0]
-                    extra_dict['P'] = getIDs("sekse of geslacht", p=True)[0]
-                if word == "vrouwelijke":
-                    extra_dict['Q'] = getIDs("vrouwelijke organisme")[0]
-                    extra_dict['P'] = getIDs("sekse of geslacht", p=True)[0]
+                if word == 'pasgeboren':
+                    extra_dict['Q'] = getIDs('geboortegewicht')[0]
+                    extra_dict['P'] = getIDs('van', p=True)[0]
+                if word == 'volwassen':
+                    extra_dict['Q'] = getIDs('volwassen gewicht')[0]
+                    extra_dict['P'] = getIDs('van', p=True)[0]
+                if word == 'mannelijke':
+                    extra_dict['Q'] = getIDs('mannelijk organisme')[0]
+                    extra_dict['P'] = getIDs('sekse of geslacht', p=True)[0]
+                if word == 'vrouwelijke':
+                    extra_dict['Q'] = getIDs('vrouwelijke organisme')[0]
+                    extra_dict['P'] = getIDs('sekse of geslacht', p=True)[0]
 
     # questions starting with 'wat' / the rest
     else: 
