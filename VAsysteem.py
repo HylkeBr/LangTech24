@@ -328,7 +328,10 @@ def find_QP(sent):
     
     # Check whether or not there is need for a metric unit
     if query_dict['P'] in [
-        'hoogte', 'lengte', 'breedte', 'massa'
+        'hoogte', 'lengte', 'breedte', 'massa',
+        'levensverwachting', 'hoogst geobserveerde levensduur',
+        'minimale frequentie van hoorbaar geluid', 
+        'maximale frequentie van hoorbaar geluid'
     ]:
         extra_dict['metricUnit'] = True
     else:
@@ -455,7 +458,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Hoe groot is een olifant?'
+    q = 'Wat is de levensverwachting van een hond?'
     print(q)
     print(answerQuestion(q))
     print()
