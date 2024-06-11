@@ -493,15 +493,28 @@ def main():
     #q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
     #q6 = 'Welke IUCN-status heeft de leeuw?'
     #q7 = 'Is een ijsbeer wit?'
-    #questions = [q1, q2, q3, q4, q5, q6, q7]
-    #for q in questions:
-        #print(q)
-        #answerQuestion(q)
-        #print()
-    q = 'Is een reuzenpanda een herbivoor?'
-    print(q)
-    print(answerQuestion(q))
-    print()
+    questions = [
+        'Wat is het gewicht van een rode panda?',
+        'Hoe oud wordt een hond?',
+        'Welke kleuren heeft een duitse herder?',
+        'Is een reuzepanda herbivoor?',
+        'Is de reuzepanda een carnivoor?',
+        'Hoe zwaar is een volwassen mannetjes leeuw?',
+        'Wat is de wetenschappelijke naam van een hond?',
+        'Wat is de belangrijkste voedselbron van een orang-oetan?',
+        'Eet een ijsbeer vis?',
+        'Tot welk ras behoort de boerenfox?',
+        'Hoe lang is een kat zwanger?',
+        'Wat is de Engelse naam van een schol?'
+    ]
+    for q in questions:
+        print(q)
+        print(answerQuestion(q))
+        print()
+#    q = 'Waar leven orang-oetangs?'
+#    print(q)
+#    print(answerQuestion(q))
+#    print()
 #    output = []
 #    for question_data in questions:
 #        question_id = question_data['id']
