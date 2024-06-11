@@ -381,27 +381,28 @@ def answerQuestion(question):
                 answers.append(answer)
 
         if len(answers) == 0:
-            print(' - Excuses. Ik heb op deze vraag geen antwoord kunnen vinden.')
+            return ' - Excuses. Ik heb op deze vraag geen antwoord kunnen vinden.'
         else:
             answer_given = False
             for ans in answers:
                 if type(ans) == bool:
                     if not answer_given:
                         if True in answers:
-                            print(' - Ja')
                             answer_given = True
+                            return 'Ja'
                         else:
-                            print(' - Nee')
                             answer_given = True
+                            return 'Nee'
                 else:
                     for ansLabel in ans:
-                        print(' -', ansLabel)
+                        return(ansLabel)
     except Exception as e:
         print(f" - Er was een fout bij het beantwoorden van de vraag: {str(e)}")
+        return None
 
 def main():
-    #with open('testing.json', 'r', encoding='utf-8') as f:
-       #questions = json.load(f)
+    with open('simulate_input.json', 'r', encoding='utf-8') as f:
+       questions = json.load(f)
 
     #for question_data in questions:
         #question = question_data['string']
@@ -409,19 +410,35 @@ def main():
         #answerQuestion(question)
         #print()
 
-    q1 = "Hoe heet een goudvis in het Italiaans?"
-    q2 = 'Welke kleur heeft een ijsbeer?'
-    q3 = 'Welke commonscategorie past bij de olifant?'
-    q4 = 'Hoe lang is een giraffe?'
-    q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
-    q6 = 'Welke IUCN-status heeft de leeuw?'
-    q7 = 'Is een ijsbeer wit?'
-    questions = [q1, q2, q3, q4, q5, q6, q7]
-    for q in questions:
-        print(q)
-        answerQuestion(q)
-        print()
-
+    #q1 = "Hoe heet een goudvis in het Italiaans?"
+    #q2 = 'Welke kleur heeft een ijsbeer?'
+    #q3 = 'Welke commonscategorie past bij de olifant?'
+    #q4 = 'Hoe lang is een giraffe?'
+    #q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
+    #q6 = 'Welke IUCN-status heeft de leeuw?'
+    #q7 = 'Is een ijsbeer wit?'
+    #questions = [q1, q2, q3, q4, q5, q6, q7]
+    #for q in questions:
+       # print(q)
+        #answerQuestion(q)
+        #print()
+    
+    output = []
+    for question_data in questions:
+        question_id = question_data['id']
+        question_text = question_data['question']
+        answer = answerQuestion(question_text)
+        correct = 1 if answer else 0
+    	
+        output.append({
+            "id": question_id,
+            "question": question_text,
+            "answer": answer,
+            "correct": correct
+        })
+    
+    with open('answers.json', 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=4)
 
 if __name__ == '__main__':
     main()
