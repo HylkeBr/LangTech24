@@ -391,7 +391,6 @@ def answerQuestion(question):
             q_ids.append(getIDs(qkey))
         p_ids = getIDs(keys['P'], p=True)
         lan = lan_list
-
         queries = createQueries(q_ids, p_ids, extra, lan)
 
         answers = []
@@ -399,7 +398,6 @@ def answerQuestion(question):
             answer = getAnswer(query)
             if answer != []:
                 answers.append(answer)
-
         if len(answers) == 0:
             return 'null'
         else:
@@ -416,6 +414,8 @@ def answerQuestion(question):
                 else:
                     ans_str = ''
                     if extra['metricUnit']:
+                        if len(ans) == 3:
+                            ans = ans[1:]
                         for n in range(len(ans)):
                             if n == 0 or n % 2 == 0:
                                 ans_str += ans[n]
@@ -455,7 +455,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Hoe groot is een olifant?'
+    q = 'Hoeveel weegt een pasgeboren leeuw?'
     print(q)
     print(answerQuestion(q))
     print()
