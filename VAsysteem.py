@@ -328,7 +328,11 @@ def find_QP(sent):
     
     # Check whether or not there is need for a metric unit
     if query_dict['P'] in [
-        'hoogte', 'lengte', 'breedte', 'massa'
+        'hoogte', 'lengte', 'breedte', 'massa',
+        'levensverwachting', 'hoogst geobserveerde levensduur',
+        'minimale frequentie van hoorbaar geluid', 
+        'maximale frequentie van hoorbaar geluid',
+        'hartslag', 'draagtijd'
     ]:
         extra_dict['metricUnit'] = True
     else:
@@ -384,7 +388,6 @@ def createQueries(qIDs, pIDs, extra, lan):
 
 '''Answers questions'''
 def answerQuestion(question):
-    try:
         keys, extra, lan_list = find_QP(question)
         q_ids = []
         for qkey in keys['Q']:
@@ -424,14 +427,26 @@ def answerQuestion(question):
                             elif n != len(ans) - 1:
                                 ans_str += ', '
                     else:
-                        for ansLabel in ans:
-                            ans_str += ansLabel
-                            if ansLabel != ans[-1]:
-                                ans_str += ', '
-                    return ans_str
-    except Exception as e:
-        print(f"Er was een fout bij het beantwoorden van de vraag: {str(e)}")
-        return None
+                        answer_given = True
+                        return 'Nee'
+            else:
+                ans_str = ''
+                if extra['metricUnit']:
+                    if len(ans) == 3:
+                        ans = ans[1:]
+                    for n in range(len(ans)):
+                        if n == 0 or n % 2 == 0:
+                            ans_str += ans[n]
+                            ans_str += ' '
+                            ans_str += ans[n+1]
+                        elif n != len(ans) - 1:
+                            ans_str += ', '
+                else:
+                    for ansLabel in ans:
+                        ans_str += ansLabel
+                        if ansLabel != ans[-1]:
+                            ans_str += ', '
+                return ans_str
 
 def main():
 #    with open('simulate_input.json', 'r', encoding='utf-8') as f:
