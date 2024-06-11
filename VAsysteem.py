@@ -178,7 +178,20 @@ def categoryOf(word):
         ],
         'snelheid': [
             'snel'
-        ]
+        ],
+        'wetenschappelijke naam': [
+            'wetenschappelijke naam'
+        ],
+        'bestudeerd door': [
+            'studie'
+        ],
+        'endemisch in': [
+            'herkomst', 'komen', 'vandaan'
+        ],
+        'belangrijkste voedselbron': [
+            'eten', 'voeden', 'voedsel',
+            'belangrijkste voedselbron'
+        ],
     }
 
     found = False
@@ -402,7 +415,7 @@ def createQueries(qIDs, pIDs, extra, lan):
                     if extra['metricUnit']:
                         query = 'SELECT ?ansLabel ?unitLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?x. ?x psv:' + ID2 + ' ?node. ?node wikibase:quantityAmount ?ans. ?node wikibase:quantityUnit ?unit. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     else: 
-                        query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                        query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     qs.append(query)
         # Generate statement query
         elif lan != []:
@@ -416,7 +429,7 @@ def createQueries(qIDs, pIDs, extra, lan):
                     if extra['metricUnit']:
                         query = 'SELECT ?statement ?ansLabel ?unitLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement psv:' + ID2 + '?node. ?node wikibase:quantityUnit ?unit. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     else: 
-                        query = 'SELECT ?statement ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                        query = 'SELECT ?statement ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?statement. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     qs.append(query)
     else: # Boolean question
         qID1s = qIDs[0]
