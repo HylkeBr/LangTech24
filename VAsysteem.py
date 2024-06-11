@@ -171,6 +171,10 @@ def categoryOf(word):
         ],
         'massa': [
              'massa', 'gewicht', 'zwaarte'
+        ],
+        'gekarakteriseerd door': [
+            'herbivoor', 'carnivoor', 'omnivoor',
+            'gender'
         ]
     }
 
@@ -268,12 +272,29 @@ def find_QP(sent):
                 query_dict['Q'] = [categoryOf(word)]
     # Binary questions starting with verb (aux)
     elif find_pos(parse, parse[0].text) == 'AUX':
+        Q2 = None
+        P = False
         for word in sent_cl.split():
             if find_dep(parse, word) == 'ROOT':
                 Q1 = word
             elif word == find_head(sent_cl, word)[0]:
                 Q2 = word
                 P1 = categoryOf(word)
+                P = True
+            else:
+                if word != categoryOf(word):
+                    P1 = categoryOf(word)
+                    P = True
+        if not P:
+            P1 = word
+        # For troubled cases
+        if Q2 == None:
+            for word in sent_cl.split():
+                if word != Q1:
+                    if word != P1:
+                        if word.lower() not in ['de', 'het', 'een']:
+                            if find_pos(parse, word) != 'AUX':
+                                Q2 = word
         query_dict['Q'] = [Q1, Q2]
         query_dict['P'] = P1
     elif re.match("Waar is.*goed voor?", sent):
@@ -320,6 +341,7 @@ def find_QP(sent):
             elif find_dep(parse, word) == 'obj':
                 Q2 = [categoryOf(word)]
                 query_dict['P'] = getIDs("belangrijkste voedselbron", p=True)[0]
+    # "Hoeveel weegt [een dier]?"
     elif re.match("Hoeveel weegt.*", sent):
         for word in sent_cl.split():
             if find_dep(parse, word) == 'nsubj':
@@ -476,7 +498,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Welke kleuren heeft een duitse herder?'
+    q = 'Is een reuzenpanda een herbivoor?'
     print(q)
     print(answerQuestion(q))
     print()
