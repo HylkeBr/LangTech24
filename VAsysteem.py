@@ -233,6 +233,12 @@ def find_QP(sent):
             if find_dep(parse, word) == 'nsubj' or find_dep(parse, word) == 'xcomp':
                 query_dict['Q'] = [categoryOf(word)]
                 query_dict['P'] = "hoogst geobserveerde levensduur"
+    # "hoe oud wordt een [dier]?"
+    elif re.match("Hoe oud wordt.*?", sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nsubj':
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = "levensverwachting"
     # questions starting with 'hoe'
     elif parse[0].lemma_.lower() == 'hoe':
         for word in sent_cl.split():
@@ -319,6 +325,14 @@ def find_QP(sent):
         d = getKeywords(sent)
         query_dict['Q'] = [d['subject']]
         query_dict['P'] = d['property']
+    
+    # Check whether or not there is need for a metric unit
+    if query_dict['P'] in [
+        'hoogte', 'lengte', 'breedte', 'massa'
+    ]:
+        extra_dict['metricUnit'] = True
+    else:
+        extra_dict['metricUnit'] = False
 
     return query_dict, extra_dict, lan_list
 
@@ -333,21 +347,27 @@ def createQueries(qIDs, pIDs, extra, lan):
             if animalID(ID):
                 ID1s.append(ID)
         # Generate queries based on differend ID combinations
-        if extra == {} and lan == []:
+        if list(extra.keys()) == ['metricUnit'] and lan == []:
             for ID1 in ID1s:
                 for ID2 in pIDs:
-                    query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' wdt:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    if extra['metricUnit']:
+                        query = 'SELECT ?ansLabel ?unitLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?x. ?x psv:' + ID2 + ' ?node. ?node wikibase:quantityAmount ?ans. ?node wikibase:quantityUnit ?unit. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    else: 
+                        query = 'SELECT ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?ans. SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     qs.append(query)
         # Generate statement query
         elif lan != []:
             for ID1 in ID1s:
                 for ID2 in pIDs:
-                    query = 'SELECT ?label WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language "' + lan[0] + '". wd:' + ID1 + ' rdfs:label ?label. }}'
+                    query = 'SELECT ?label WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language "' + lan[0] + '". wd:' + ID1 + ' rdfs:label ?label. } }'
                     qs.append(query)
         else:
             for ID1 in ID1s:
                 for ID2 in pIDs:
-                    query = 'SELECT ?statement ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    if extra['metricUnit']:
+                        query = 'SELECT ?statement ?ansLabel ?unitLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement psv:' + ID2 + '?node. ?node wikibase:quantityUnit ?unit. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
+                    else: 
+                        query = 'SELECT ?statement ?ansLabel WHERE { wd:' + ID1 + ' p:' + ID2 + ' ?statement. ?statement ps:' + ID2 + ' ?ans. ?statement pq:' + extra['P'] + ' wd:' + extra['Q'] + ' SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }'
                     qs.append(query)
     else: # Boolean question
         qID1s = qIDs[0]
@@ -395,10 +415,19 @@ def answerQuestion(question):
                             return 'Nee'
                 else:
                     ans_str = ''
-                    for ansLabel in ans:
-                        ans_str += ansLabel
-                        if ansLabel != ans[-1]:
-                            ans_str += ', '
+                    if extra['metricUnit']:
+                        for n in range(len(ans)):
+                            if n == 0 or n % 2 == 0:
+                                ans_str += ans[n]
+                                ans_str += ' '
+                                ans_str += ans[n+1]
+                            elif n != len(ans) - 1:
+                                ans_str += ', '
+                    else:
+                        for ansLabel in ans:
+                            ans_str += ansLabel
+                            if ansLabel != ans[-1]:
+                                ans_str += ', '
                     return ans_str
     except Exception as e:
         print(f"Er was een fout bij het beantwoorden van de vraag: {str(e)}")
@@ -426,7 +455,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Wat is de belangrijkste voedselbron van een tijger?'
+    q = 'Hoe groot is een olifant?'
     print(q)
     print(answerQuestion(q))
     print()
