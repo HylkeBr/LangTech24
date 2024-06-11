@@ -392,6 +392,15 @@ def find_QP(sent):
                 if word == 'vrouwelijke':
                     extra_dict['Q'] = getIDs('vrouwelijke organisme')[0]
                     extra_dict['P'] = getIDs('sekse of geslacht', p=True)[0]
+    elif re.match('Wat is de.*naam van.*?', sent):
+        for word in sent_cl.split():
+            if find_dep(parse, word) == 'nmod':
+                d = getKeywords(sent)
+                query_dict['Q'] = [categoryOf(word)]
+                query_dict['P'] = 'triviale naam'
+            if find_dep(parse, word) == 'amod':
+                result = langcodes.find(word)
+                lan_list = [str(result)]
 
     # questions starting with 'wat' / the rest
     else: 
