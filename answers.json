@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "question": "Hoe heet een goudvis in het Italiaans?",
+        "answer": "Carassius auratus",
+        "correct": 1
+    },
+    {
+        "id": 2,
+        "question": "Is een ijsbeer wit?",
+        "answer": "Ja",
+        "correct": 1
+    }
+]
