@@ -461,106 +461,81 @@ def createQueries(qIDs, pIDs, extra, lan):
 
 '''Answers questions'''
 def answerQuestion(question):
-
-    keys, extra, lan_list = find_QP(question)
-    q_ids = []
-    for qkey in keys['Q']:
-        q_ids.append(getIDs(qkey))
-    p_ids = getIDs(keys['P'], p=True)
-    lan = lan_list
-    queries = createQueries(q_ids, p_ids, extra, lan)
-    answers = []
-    for query in queries:
-        answer = getAnswer(query)
-        if answer != []:
-            answers.append(answer)
-    if len(answers) == 0:
-        return 'null'
-    else:
-        answer_given = False
-        for ans in answers:
-            if type(ans) == bool:
-                if not answer_given:
-                    if True in answers:
-                        answer_given = True
-                        return 'Ja'
-                    else:
-                        answer_given = True
-                        return 'Nee'
-            else:
-                ans_str = ''
-                if extra['metricUnit']:
-                    if len(ans) == 3:
-                        ans = ans[1:]
-                    for n in range(len(ans)):
-                        if n == 0 or n % 2 == 0:
-                            ans_str += ans[n]
-                            ans_str += ' '
-                            ans_str += ans[n+1]
-                        elif n != len(ans) - 1:
-                            ans_str += ', '
+    try:
+        keys, extra, lan_list = find_QP(question)
+        q_ids = []
+        for qkey in keys['Q']:
+            q_ids.append(getIDs(qkey))
+        p_ids = getIDs(keys['P'], p=True)
+        lan = lan_list
+        queries = createQueries(q_ids, p_ids, extra, lan)
+        answers = []
+        for query in queries:
+            answer = getAnswer(query)
+            if answer != []:
+                answers.append(answer)
+        if len(answers) == 0:
+            return 'null'
+        else:
+            answer_given = False
+            for ans in answers:
+                if type(ans) == bool:
+                    if not answer_given:
+                        if True in answers:
+                            answer_given = True
+                            return 'Ja'
+                        else:
+                            answer_given = True
+                            return 'Nee'
                 else:
-                    for ansLabel in ans:
-                        ans_str += ansLabel
-                        if ansLabel != ans[-1]:
-                            ans_str += ', '
-                return ans_str
+                    ans_str = ''
+                    if extra['metricUnit']:
+                        if len(ans) == 3:
+                            ans = ans[1:]
+                        for n in range(len(ans)):
+                            if n == 0 or n % 2 == 0:
+                                ans_str += ans[n]
+                                ans_str += ' '
+                                ans_str += ans[n+1]
+                            elif n != len(ans) - 1:
+                                ans_str += ', '
+                    else:
+                        for ansLabel in ans:
+                            ans_str += ansLabel
+                            if ansLabel != ans[-1]:
+                                ans_str += ', '
+                    return ans_str
+    except:
+        return 'null'
 
 def main():
-#    with open('simulate_input.json', 'r', encoding='utf-8') as f:
-#       questions = json.load(f)
+    with open('evaluation.json', 'r', encoding='utf-8') as f:
+       questions = json.load(f)
 
-    #for question_data in questions:
-        #question = question_data['string']
-        #print(f"Vraag: {question}")
-        #answerQuestion(question)
-        #print()
+    output = []
+    for question_data in questions:
+        question_id = question_data['id']
+        question_text = question_data['question']
+        answer = answerQuestion(question_text)
+        if answer != 'null':
+            correct = 1
+        else:
+            correct = 0
 
-    #q1 = "Hoe heet een goudvis in het Italiaans?"
-    #q2 = 'Welke kleur heeft een ijsbeer?'
-    #q3 = 'Welke commonscategorie past bij de olifant?'
-    #q4 = 'Hoe lang is een giraffe?'
-    #q5 = 'Wat is de belangrijkste voedselbron van een tijger?'
-    #q6 = 'Welke IUCN-status heeft de leeuw?'
-    #q7 = 'Is een ijsbeer wit?'
-    questions = [
-        'Hoeveel weegt een mannelijke leeuw?',
-        'Hoe zwaar is een mannelijke leeuw?',
-        'Welke kleuren heeft een duitse herder?',
-        'Is een reuzepanda herbivoor?',
-        'Is de reuzepanda een carnivoor?',
-        'Hoe zwaar is een volwassen mannetjes leeuw?',
-        'Wat is de wetenschappelijke naam van een hond?',
-        'Wat is de belangrijkste voedselbron van een orang-oetan?',
-        'Eet een ijsbeer vis?',
-        'Tot welk ras behoort de boerenfox?',
-        'Hoe lang is een kat zwanger?',
-        'Wat is de Engelse naam van een schol?'
-    ]
-    for q in questions:
-        print(q)
-        print(answerQuestion(q))
+        print(question_text)
+        print(answer)
+        print('\t', correct)
         print()
-#    q = 'Waar leven orang-oetangs?'
-#    print(q)
-#    print(answerQuestion(q))
-#    print()
-#    output = []
-#    for question_data in questions:
-#        question_id = question_data['id']
-#        question_text = question_data['question']
-#        answer = answerQuestion(question_text)
-#        correct = 1 if answer else 0
-#    	
-#        output.append({
-#            "id": question_id,
-#            "question": question_text,
-#            "answer": answer,
-#            "correct": correct
-#        })
-#    
-#    with open('answers.json', 'w', encoding='utf-8') as f:
-#        json.dump(output, f, indent=4)
+    	
+        output.append({
+            "id": question_id,
+            "question": question_text,
+            "answer": answer,
+            "correct": correct
+        })
+    
+    with open('system.json', 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=4)
 
 if __name__ == '__main__':
     main()
