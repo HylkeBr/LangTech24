@@ -175,6 +175,9 @@ def categoryOf(word):
         'gekarakteriseerd door': [
             'herbivoor', 'carnivoor', 'omnivoor',
             'gender'
+        ],
+        'snelheid': [
+            'snel'
         ]
     }
 
@@ -373,7 +376,7 @@ def find_QP(sent):
         'levensverwachting', 'hoogst geobserveerde levensduur',
         'minimale frequentie van hoorbaar geluid', 
         'maximale frequentie van hoorbaar geluid',
-        'hartslag', 'draagtijd', 'broedperiode'
+        'hartslag', 'draagtijd', 'broedperiode', 'snelheid'
     ]:
         extra_dict['metricUnit'] = True
     else:
@@ -498,7 +501,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Is een reuzenpanda een herbivoor?'
+    q = 'Hoe groot kan een olifant worden?'
     print(q)
     print(answerQuestion(q))
     print()
