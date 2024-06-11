@@ -351,7 +351,7 @@ def find_QP(sent):
         'levensverwachting', 'hoogst geobserveerde levensduur',
         'minimale frequentie van hoorbaar geluid', 
         'maximale frequentie van hoorbaar geluid',
-        'hartslag', 'draagtijd'
+        'hartslag', 'draagtijd', 'broedperiode'
     ]:
         extra_dict['metricUnit'] = True
     else:
@@ -476,7 +476,7 @@ def main():
         #print(q)
         #answerQuestion(q)
         #print()
-    q = 'Welke kleuren heeft een duitse herder?'
+    q = 'Wat is de hartslag van een kip?'
     print(q)
     print(answerQuestion(q))
     print()
